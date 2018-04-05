@@ -1,0 +1,1528 @@
+fileFormatVersion: 2
+guid: d8efa053fe73a454e96ab80a978a32b9
+timeCreated: 1522547394
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: bowser_jr__rpg_maker_mv_by_retrospriteresources-dassp3w_0
+    21300002: bowser_jr__rpg_maker_mv_by_retrospriteresources-dassp3w_1
+    21300004: bowser_jr__rpg_maker_mv_by_retrospriteresources-dassp3w_2
+    21300006: bowser_jr__rpg_maker_mv_by_retrospriteresources-dassp3w_3
+    21300008: bowser_jr__rpg_maker_mv_by_retrospriteresources-dassp3w_4
+    21300010: bowser_jr__rpg_maker_mv_by_retrospriteresources-dassp3w_5
+    21300012: bowser_jr__rpg_maker_mv_by_retrospriteresources-dassp3w_6
+    21300014: bowser_jr__rpg_maker_mv_by_retrospriteresources-dassp3w_7
+    21300016: bowser_jr__rpg_maker_mv_by_retrospriteresources-dassp3w_8
+    21300018: bowser_jr__rpg_maker_mv_by_retrospriteresources-dassp3w_9
+    21300020: bowser_jr__rpg_maker_mv_by_retrospriteresources-dassp3w_10
+    21300022: bowser_jr__rpg_maker_mv_by_retrospriteresources-dassp3w_11
+    21300024: bowser_jr__rpg_maker_mv_by_retrospriteresources-dassp3w_12
+    21300026: bowser_jr__rpg_maker_mv_by_retrospriteresources-dassp3w_13
+    21300028: bowser_jr__rpg_maker_mv_by_retrospriteresources-dassp3w_14
+    21300030: bowser_jr__rpg_maker_mv_by_retrospriteresources-dassp3w_15
+    21300032: bowser_jr__rpg_maker_mv_by_retrospriteresources-dassp3w_16
+    21300034: bowser_jr__rpg_maker_mv_by_retrospriteresources-dassp3w_17
+    21300036: bowser_jr__rpg_maker_mv_by_retrospriteresources-dassp3w_18
+    21300038: bowser_jr__rpg_maker_mv_by_retrospriteresources-dassp3w_19
+    21300040: bowser_jr__rpg_maker_mv_by_retrospriteresources-dassp3w_20
+    21300042: bowser_jr__rpg_maker_mv_by_retrospriteresources-dassp3w_21
+    21300044: bowser_jr__rpg_maker_mv_by_retrospriteresources-dassp3w_22
+    21300046: bowser_jr__rpg_maker_mv_by_retrospriteresources-dassp3w_23
+    21300048: bowser_jr__rpg_maker_mv_by_retrospriteresources-dassp3w_24
+    21300050: bowser_jr__rpg_maker_mv_by_retrospriteresources-dassp3w_25
+    21300052: bowser_jr__rpg_maker_mv_by_retrospriteresources-dassp3w_26
+    21300054: bowser_jr__rpg_maker_mv_by_retrospriteresources-dassp3w_27
+    21300056: bowser_jr__rpg_maker_mv_by_retrospriteresources-dassp3w_28
+    21300058: bowser_jr__rpg_maker_mv_by_retrospriteresources-dassp3w_29
+    21300060: bowser_jr__rpg_maker_mv_by_retrospriteresources-dassp3w_30
+    21300062: bowser_jr__rpg_maker_mv_by_retrospriteresources-dassp3w_31
+    21300064: bowser_jr__rpg_maker_mv_by_retrospriteresources-dassp3w_32
+    21300066: bowser_jr__rpg_maker_mv_by_retrospriteresources-dassp3w_33
+    21300068: bowser_jr__rpg_maker_mv_by_retrospriteresources-dassp3w_34
+    21300070: bowser_jr__rpg_maker_mv_by_retrospriteresources-dassp3w_35
+    21300072: bowser_jr__rpg_maker_mv_by_retrospriteresources-dassp3w_36
+    21300074: bowser_jr__rpg_maker_mv_by_retrospriteresources-dassp3w_37
+    21300076: bowser_jr__rpg_maker_mv_by_retrospriteresources-dassp3w_38
+    21300078: bowser_jr__rpg_maker_mv_by_retrospriteresources-dassp3w_39
+    21300080: bowser_jr__rpg_maker_mv_by_retrospriteresources-dassp3w_40
+    21300082: bowser_jr__rpg_maker_mv_by_retrospriteresources-dassp3w_41
+    21300084: bowser_jr__rpg_maker_mv_by_retrospriteresources-dassp3w_42
+    21300086: bowser_jr__rpg_maker_mv_by_retrospriteresources-dassp3w_43
+    21300088: bowser_jr__rpg_maker_mv_by_retrospriteresources-dassp3w_44
+    21300090: bowser_jr__rpg_maker_mv_by_retrospriteresources-dassp3w_45
+    21300092: bowser_jr__rpg_maker_mv_by_retrospriteresources-dassp3w_46
+    21300094: bowser_jr__rpg_maker_mv_by_retrospriteresources-dassp3w_47
+    21300096: bowser_jr__rpg_maker_mv_by_retrospriteresources-dassp3w_48
+    21300098: bowser_jr__rpg_maker_mv_by_retrospriteresources-dassp3w_49
+    21300100: bowser_jr__rpg_maker_mv_by_retrospriteresources-dassp3w_50
+    21300102: bowser_jr__rpg_maker_mv_by_retrospriteresources-dassp3w_51
+    21300104: bowser_jr__rpg_maker_mv_by_retrospriteresources-dassp3w_52
+    21300106: bowser_jr__rpg_maker_mv_by_retrospriteresources-dassp3w_53
+    21300108: bowser_jr__rpg_maker_mv_by_retrospriteresources-dassp3w_54
+    21300110: bowser_jr__rpg_maker_mv_by_retrospriteresources-dassp3w_55
+    21300112: bowser_jr__rpg_maker_mv_by_retrospriteresources-dassp3w_56
+    21300114: bowser_jr__rpg_maker_mv_by_retrospriteresources-dassp3w_57
+    21300116: bowser_jr__rpg_maker_mv_by_retrospriteresources-dassp3w_58
+    21300118: bowser_jr__rpg_maker_mv_by_retrospriteresources-dassp3w_59
+    21300120: bowser_jr__rpg_maker_mv_by_retrospriteresources-dassp3w_60
+    21300122: bowser_jr__rpg_maker_mv_by_retrospriteresources-dassp3w_61
+    21300124: bowser_jr__rpg_maker_mv_by_retrospriteresources-dassp3w_62
+    21300126: bowser_jr__rpg_maker_mv_by_retrospriteresources-dassp3w_63
+    21300128: bowser_jr__rpg_maker_mv_by_retrospriteresources-dassp3w_64
+    21300130: bowser_jr__rpg_maker_mv_by_retrospriteresources-dassp3w_65
+    21300132: bowser_jr__rpg_maker_mv_by_retrospriteresources-dassp3w_66
+    21300134: bowser_jr__rpg_maker_mv_by_retrospriteresources-dassp3w_67
+    21300136: bowser_jr__rpg_maker_mv_by_retrospriteresources-dassp3w_68
+    21300138: bowser_jr__rpg_maker_mv_by_retrospriteresources-dassp3w_69
+    21300140: bowser_jr__rpg_maker_mv_by_retrospriteresources-dassp3w_70
+    21300142: bowser_jr__rpg_maker_mv_by_retrospriteresources-dassp3w_71
+    21300144: bowser_jr__rpg_maker_mv_by_retrospriteresources-dassp3w_72
+    21300146: bowser_jr__rpg_maker_mv_by_retrospriteresources-dassp3w_73
+    21300148: bowser_jr__rpg_maker_mv_by_retrospriteresources-dassp3w_74
+    21300150: bowser_jr__rpg_maker_mv_by_retrospriteresources-dassp3w_75
+    21300152: bowser_jr__rpg_maker_mv_by_retrospriteresources-dassp3w_76
+    21300154: bowser_jr__rpg_maker_mv_by_retrospriteresources-dassp3w_77
+    21300156: bowser_jr__rpg_maker_mv_by_retrospriteresources-dassp3w_78
+    21300158: bowser_jr__rpg_maker_mv_by_retrospriteresources-dassp3w_79
+    21300160: bowser_jr__rpg_maker_mv_by_retrospriteresources-dassp3w_80
+    21300162: bowser_jr__rpg_maker_mv_by_retrospriteresources-dassp3w_81
+    21300164: bowser_jr__rpg_maker_mv_by_retrospriteresources-dassp3w_82
+    21300166: bowser_jr__rpg_maker_mv_by_retrospriteresources-dassp3w_83
+    21300168: bowser_jr__rpg_maker_mv_by_retrospriteresources-dassp3w_84
+    21300170: bowser_jr__rpg_maker_mv_by_retrospriteresources-dassp3w_85
+    21300172: bowser_jr__rpg_maker_mv_by_retrospriteresources-dassp3w_86
+    21300174: bowser_jr__rpg_maker_mv_by_retrospriteresources-dassp3w_87
+    21300176: bowser_jr__rpg_maker_mv_by_retrospriteresources-dassp3w_88
+    21300178: bowser_jr__rpg_maker_mv_by_retrospriteresources-dassp3w_89
+    21300180: bowser_jr__rpg_maker_mv_by_retrospriteresources-dassp3w_90
+    21300182: bowser_jr__rpg_maker_mv_by_retrospriteresources-dassp3w_91
+    21300184: bowser_jr__rpg_maker_mv_by_retrospriteresources-dassp3w_92
+    21300186: bowser_jr__rpg_maker_mv_by_retrospriteresources-dassp3w_93
+    21300188: bowser_jr__rpg_maker_mv_by_retrospriteresources-dassp3w_94
+    21300190: bowser_jr__rpg_maker_mv_by_retrospriteresources-dassp3w_95
+  externalObjects: {}
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: bowser_jr__rpg_maker_mv_by_retrospriteresources-dassp3w_0
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 597
+        width: 55
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bowser_jr__rpg_maker_mv_by_retrospriteresources-dassp3w_1
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 597
+        width: 54
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bowser_jr__rpg_maker_mv_by_retrospriteresources-dassp3w_2
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 597
+        width: 55
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bowser_jr__rpg_maker_mv_by_retrospriteresources-dassp3w_3
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 597
+        width: 55
+        height: 71
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bowser_jr__rpg_maker_mv_by_retrospriteresources-dassp3w_4
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 597
+        width: 54
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bowser_jr__rpg_maker_mv_by_retrospriteresources-dassp3w_5
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 597
+        width: 55
+        height: 71
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bowser_jr__rpg_maker_mv_by_retrospriteresources-dassp3w_6
+      rect:
+        serializedVersion: 2
+        x: 524
+        y: 597
+        width: 62
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bowser_jr__rpg_maker_mv_by_retrospriteresources-dassp3w_7
+      rect:
+        serializedVersion: 2
+        x: 607
+        y: 597
+        width: 66
+        height: 71
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bowser_jr__rpg_maker_mv_by_retrospriteresources-dassp3w_8
+      rect:
+        serializedVersion: 2
+        x: 693
+        y: 597
+        width: 65
+        height: 71
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bowser_jr__rpg_maker_mv_by_retrospriteresources-dassp3w_9
+      rect:
+        serializedVersion: 2
+        x: 786
+        y: 597
+        width: 49
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bowser_jr__rpg_maker_mv_by_retrospriteresources-dassp3w_10
+      rect:
+        serializedVersion: 2
+        x: 872
+        y: 598
+        width: 47
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bowser_jr__rpg_maker_mv_by_retrospriteresources-dassp3w_11
+      rect:
+        serializedVersion: 2
+        x: 952
+        y: 512
+        width: 58
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bowser_jr__rpg_maker_mv_by_retrospriteresources-dassp3w_12
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 512
+        width: 60
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bowser_jr__rpg_maker_mv_by_retrospriteresources-dassp3w_13
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 512
+        width: 64
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bowser_jr__rpg_maker_mv_by_retrospriteresources-dassp3w_14
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 512
+        width: 62
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bowser_jr__rpg_maker_mv_by_retrospriteresources-dassp3w_15
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 512
+        width: 60
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bowser_jr__rpg_maker_mv_by_retrospriteresources-dassp3w_16
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 512
+        width: 64
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bowser_jr__rpg_maker_mv_by_retrospriteresources-dassp3w_17
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 512
+        width: 62
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bowser_jr__rpg_maker_mv_by_retrospriteresources-dassp3w_18
+      rect:
+        serializedVersion: 2
+        x: 519
+        y: 512
+        width: 71
+        height: 83
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bowser_jr__rpg_maker_mv_by_retrospriteresources-dassp3w_19
+      rect:
+        serializedVersion: 2
+        x: 606
+        y: 512
+        width: 68
+        height: 79
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bowser_jr__rpg_maker_mv_by_retrospriteresources-dassp3w_20
+      rect:
+        serializedVersion: 2
+        x: 691
+        y: 512
+        width: 69
+        height: 79
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bowser_jr__rpg_maker_mv_by_retrospriteresources-dassp3w_21
+      rect:
+        serializedVersion: 2
+        x: 781
+        y: 512
+        width: 60
+        height: 81
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bowser_jr__rpg_maker_mv_by_retrospriteresources-dassp3w_22
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 426
+        width: 60
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bowser_jr__rpg_maker_mv_by_retrospriteresources-dassp3w_23
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 426
+        width: 64
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bowser_jr__rpg_maker_mv_by_retrospriteresources-dassp3w_24
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 426
+        width: 62
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bowser_jr__rpg_maker_mv_by_retrospriteresources-dassp3w_25
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 426
+        width: 60
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bowser_jr__rpg_maker_mv_by_retrospriteresources-dassp3w_26
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 426
+        width: 64
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bowser_jr__rpg_maker_mv_by_retrospriteresources-dassp3w_27
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 426
+        width: 62
+        height: 73
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bowser_jr__rpg_maker_mv_by_retrospriteresources-dassp3w_28
+      rect:
+        serializedVersion: 2
+        x: 519
+        y: 426
+        width: 71
+        height: 83
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bowser_jr__rpg_maker_mv_by_retrospriteresources-dassp3w_29
+      rect:
+        serializedVersion: 2
+        x: 606
+        y: 426
+        width: 68
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bowser_jr__rpg_maker_mv_by_retrospriteresources-dassp3w_30
+      rect:
+        serializedVersion: 2
+        x: 691
+        y: 426
+        width: 69
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bowser_jr__rpg_maker_mv_by_retrospriteresources-dassp3w_31
+      rect:
+        serializedVersion: 2
+        x: 781
+        y: 426
+        width: 60
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bowser_jr__rpg_maker_mv_by_retrospriteresources-dassp3w_32
+      rect:
+        serializedVersion: 2
+        x: 867
+        y: 426
+        width: 58
+        height: 85
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bowser_jr__rpg_maker_mv_by_retrospriteresources-dassp3w_33
+      rect:
+        serializedVersion: 2
+        x: 952
+        y: 426
+        width: 58
+        height: 85
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bowser_jr__rpg_maker_mv_by_retrospriteresources-dassp3w_34
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 341
+        width: 53
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bowser_jr__rpg_maker_mv_by_retrospriteresources-dassp3w_35
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 341
+        width: 52
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bowser_jr__rpg_maker_mv_by_retrospriteresources-dassp3w_36
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 341
+        width: 53
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bowser_jr__rpg_maker_mv_by_retrospriteresources-dassp3w_37
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 341
+        width: 53
+        height: 71
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bowser_jr__rpg_maker_mv_by_retrospriteresources-dassp3w_38
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 341
+        width: 52
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bowser_jr__rpg_maker_mv_by_retrospriteresources-dassp3w_39
+      rect:
+        serializedVersion: 2
+        x: 443
+        y: 341
+        width: 53
+        height: 71
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bowser_jr__rpg_maker_mv_by_retrospriteresources-dassp3w_40
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 341
+        width: 85
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bowser_jr__rpg_maker_mv_by_retrospriteresources-dassp3w_41
+      rect:
+        serializedVersion: 2
+        x: 598
+        y: 341
+        width: 84
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bowser_jr__rpg_maker_mv_by_retrospriteresources-dassp3w_42
+      rect:
+        serializedVersion: 2
+        x: 683
+        y: 341
+        width: 84
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bowser_jr__rpg_maker_mv_by_retrospriteresources-dassp3w_43
+      rect:
+        serializedVersion: 2
+        x: 854
+        y: 341
+        width: 84
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bowser_jr__rpg_maker_mv_by_retrospriteresources-dassp3w_44
+      rect:
+        serializedVersion: 2
+        x: 939
+        y: 341
+        width: 85
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bowser_jr__rpg_maker_mv_by_retrospriteresources-dassp3w_45
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 255
+        width: 47
+        height: 75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bowser_jr__rpg_maker_mv_by_retrospriteresources-dassp3w_46
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 170
+        width: 56
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bowser_jr__rpg_maker_mv_by_retrospriteresources-dassp3w_47
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 170
+        width: 56
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bowser_jr__rpg_maker_mv_by_retrospriteresources-dassp3w_48
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 255
+        width: 65
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bowser_jr__rpg_maker_mv_by_retrospriteresources-dassp3w_49
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 255
+        width: 62
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bowser_jr__rpg_maker_mv_by_retrospriteresources-dassp3w_50
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 255
+        width: 62
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bowser_jr__rpg_maker_mv_by_retrospriteresources-dassp3w_51
+      rect:
+        serializedVersion: 2
+        x: 524
+        y: 255
+        width: 62
+        height: 71
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bowser_jr__rpg_maker_mv_by_retrospriteresources-dassp3w_52
+      rect:
+        serializedVersion: 2
+        x: 609
+        y: 255
+        width: 62
+        height: 71
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bowser_jr__rpg_maker_mv_by_retrospriteresources-dassp3w_53
+      rect:
+        serializedVersion: 2
+        x: 694
+        y: 255
+        width: 62
+        height: 71
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bowser_jr__rpg_maker_mv_by_retrospriteresources-dassp3w_54
+      rect:
+        serializedVersion: 2
+        x: 779
+        y: 255
+        width: 63
+        height: 85
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bowser_jr__rpg_maker_mv_by_retrospriteresources-dassp3w_55
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 255
+        width: 64
+        height: 85
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bowser_jr__rpg_maker_mv_by_retrospriteresources-dassp3w_56
+      rect:
+        serializedVersion: 2
+        x: 950
+        y: 255
+        width: 63
+        height: 85
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bowser_jr__rpg_maker_mv_by_retrospriteresources-dassp3w_57
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 170
+        width: 58
+        height: 83
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bowser_jr__rpg_maker_mv_by_retrospriteresources-dassp3w_58
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 170
+        width: 60
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bowser_jr__rpg_maker_mv_by_retrospriteresources-dassp3w_59
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 170
+        width: 62
+        height: 73
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bowser_jr__rpg_maker_mv_by_retrospriteresources-dassp3w_60
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 170
+        width: 62
+        height: 73
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bowser_jr__rpg_maker_mv_by_retrospriteresources-dassp3w_61
+      rect:
+        serializedVersion: 2
+        x: 523
+        y: 170
+        width: 63
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bowser_jr__rpg_maker_mv_by_retrospriteresources-dassp3w_62
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 170
+        width: 64
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bowser_jr__rpg_maker_mv_by_retrospriteresources-dassp3w_63
+      rect:
+        serializedVersion: 2
+        x: 694
+        y: 170
+        width: 63
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bowser_jr__rpg_maker_mv_by_retrospriteresources-dassp3w_64
+      rect:
+        serializedVersion: 2
+        x: 782
+        y: 85
+        width: 58
+        height: 85
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bowser_jr__rpg_maker_mv_by_retrospriteresources-dassp3w_65
+      rect:
+        serializedVersion: 2
+        x: 867
+        y: 85
+        width: 58
+        height: 85
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bowser_jr__rpg_maker_mv_by_retrospriteresources-dassp3w_66
+      rect:
+        serializedVersion: 2
+        x: 952
+        y: 85
+        width: 58
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bowser_jr__rpg_maker_mv_by_retrospriteresources-dassp3w_67
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 85
+        width: 58
+        height: 83
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bowser_jr__rpg_maker_mv_by_retrospriteresources-dassp3w_68
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 85
+        width: 56
+        height: 85
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bowser_jr__rpg_maker_mv_by_retrospriteresources-dassp3w_69
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 85
+        width: 57
+        height: 85
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bowser_jr__rpg_maker_mv_by_retrospriteresources-dassp3w_70
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 85
+        width: 60
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bowser_jr__rpg_maker_mv_by_retrospriteresources-dassp3w_71
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 85
+        width: 62
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bowser_jr__rpg_maker_mv_by_retrospriteresources-dassp3w_72
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 85
+        width: 62
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bowser_jr__rpg_maker_mv_by_retrospriteresources-dassp3w_73
+      rect:
+        serializedVersion: 2
+        x: 523
+        y: 85
+        width: 63
+        height: 79
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bowser_jr__rpg_maker_mv_by_retrospriteresources-dassp3w_74
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 85
+        width: 64
+        height: 79
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bowser_jr__rpg_maker_mv_by_retrospriteresources-dassp3w_75
+      rect:
+        serializedVersion: 2
+        x: 694
+        y: 85
+        width: 63
+        height: 79
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bowser_jr__rpg_maker_mv_by_retrospriteresources-dassp3w_76
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 0
+        width: 58
+        height: 75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bowser_jr__rpg_maker_mv_by_retrospriteresources-dassp3w_77
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 0
+        width: 58
+        height: 75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bowser_jr__rpg_maker_mv_by_retrospriteresources-dassp3w_78
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 0
+        width: 58
+        height: 75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bowser_jr__rpg_maker_mv_by_retrospriteresources-dassp3w_79
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 0
+        width: 58
+        height: 75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bowser_jr__rpg_maker_mv_by_retrospriteresources-dassp3w_80
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 0
+        width: 58
+        height: 75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bowser_jr__rpg_maker_mv_by_retrospriteresources-dassp3w_81
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 0
+        width: 58
+        height: 75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bowser_jr__rpg_maker_mv_by_retrospriteresources-dassp3w_82
+      rect:
+        serializedVersion: 2
+        x: 526
+        y: 0
+        width: 58
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bowser_jr__rpg_maker_mv_by_retrospriteresources-dassp3w_83
+      rect:
+        serializedVersion: 2
+        x: 611
+        y: 0
+        width: 58
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bowser_jr__rpg_maker_mv_by_retrospriteresources-dassp3w_84
+      rect:
+        serializedVersion: 2
+        x: 696
+        y: 0
+        width: 58
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bowser_jr__rpg_maker_mv_by_retrospriteresources-dassp3w_85
+      rect:
+        serializedVersion: 2
+        x: 779
+        y: 0
+        width: 63
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bowser_jr__rpg_maker_mv_by_retrospriteresources-dassp3w_86
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 0
+        width: 64
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bowser_jr__rpg_maker_mv_by_retrospriteresources-dassp3w_87
+      rect:
+        serializedVersion: 2
+        x: 950
+        y: 0
+        width: 63
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bowser_jr__rpg_maker_mv_by_retrospriteresources-dassp3w_88
+      rect:
+        serializedVersion: 2
+        x: 867
+        y: 512
+        width: 58
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bowser_jr__rpg_maker_mv_by_retrospriteresources-dassp3w_89
+      rect:
+        serializedVersion: 2
+        x: 954
+        y: 598
+        width: 54
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bowser_jr__rpg_maker_mv_by_retrospriteresources-dassp3w_90
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 341
+        width: 82
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bowser_jr__rpg_maker_mv_by_retrospriteresources-dassp3w_91
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 255
+        width: 49
+        height: 75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bowser_jr__rpg_maker_mv_by_retrospriteresources-dassp3w_92
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 255
+        width: 48
+        height: 75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bowser_jr__rpg_maker_mv_by_retrospriteresources-dassp3w_93
+      rect:
+        serializedVersion: 2
+        x: 781
+        y: 170
+        width: 59
+        height: 85
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bowser_jr__rpg_maker_mv_by_retrospriteresources-dassp3w_94
+      rect:
+        serializedVersion: 2
+        x: 866
+        y: 170
+        width: 58
+        height: 85
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bowser_jr__rpg_maker_mv_by_retrospriteresources-dassp3w_95
+      rect:
+        serializedVersion: 2
+        x: 952
+        y: 170
+        width: 58
+        height: 85
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    outline: []
+    physicsShape: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
