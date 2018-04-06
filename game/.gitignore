@@ -1,8 +1,12 @@
-# -----------------------------------------------------------
+# ------------------------------------------------------------------------
 # Unity specific gitignore
 #
-# Taken from https://github.com/github/gitignore/blob/master/
-# -----------------------------------------------------------
+# Taken from:
+#
+# https://github.com/github/gitignore/blob/master/Unity.gitignore
+# https://github.com/github/gitignore/blob/master/Global/Windows.gitignore
+# https://github.com/github/gitignore/blob/master/Global/macOS.gitignore
+# ------------------------------------------------------------------------
 
 [Ll]ibrary/
 [Tt]emp/
