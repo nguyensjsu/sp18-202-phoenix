@@ -1,1 +1,0 @@
-Weekly Team Scrum Journal
