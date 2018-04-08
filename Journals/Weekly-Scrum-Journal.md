@@ -1,6 +1,6 @@
 # Weekly Team Scrum Journal
 
-##Week 1
+## Week 1
 
 ### 1. What tasks did I work on / complete?
 * Clifton Francis
@@ -17,6 +17,12 @@
 	* Added timer, current level text, and game object skeleton for win/lose text
 
 * Animesh Grover
+	* Downloaded and installed Unity
+	* Read and watched unity tutorials
+	* Added sprint task board template
+	* Created the map and terrrain for level 1
+	* added assets to the project
+	* Added potential enemy sprite to the project
 
 * Watcharit Maharutainont
 
@@ -29,13 +35,17 @@
 	* Add rigid body on terrain for collision detection
 
 * Animesh Grover
+	* Working with Enemy movement script
+	* Utilizing Unity AI for enemy movement
+	* Getting more enemy sprites for other levels
+	* Working with terrain collision detection
 
 * Watcharit Maharutainont
 
 * Phani Teja Kantamneni
 
 
-What tasks are blocked waiting on another team member?
+### 3. What tasks are blocked waiting on another team member?
 
 * Accessing public variables of other game objects
 * Waiting for enemy sprite to be created and eventually killed to display win/lose text
