@@ -20,11 +20,16 @@
 	* Downloaded and installed Unity
 	* Read and watched unity tutorials
 	* Added sprint task board template
-	* Created the map and terrrain for level 1
+	* Created the map and terrain for level 1
 	* added assets to the project
 	* Added potential enemy sprite to the project
 
 * Watcharit Maharutainont
+	* Downloaded and installed Unity
+	* Went through Unity tutorials
+	* Implemented animation for the movement of main character
+	* Wrote a script for main character's movement
+	* Implemented object collision detection for player and items
 
 * Phani Teja Kantamneni
 
@@ -41,6 +46,8 @@
 	* Working with terrain collision detection
 
 * Watcharit Maharutainont
+	* Find item assets
+	* Implement animation for items usage
 
 * Phani Teja Kantamneni
 
@@ -49,4 +56,3 @@
 
 * Accessing public variables of other game objects
 * Waiting for enemy sprite to be created and eventually killed to display win/lose text
-
