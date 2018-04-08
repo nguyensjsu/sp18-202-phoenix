@@ -32,6 +32,10 @@
 	* Implemented object collision detection for player and items
 
 * Phani Teja Kantamneni
+	* Downloaded and installed unity
+	* Completed the unity tutorials and gained insights into how the components work
+	* Browsed through the asset store and got hold of a few sprites for items
+	* Wrote a prototype script for fixed path enemy movement, using waypoints
 
 ### 2. What am I planning to work on next?
 
@@ -50,6 +54,9 @@
 	* Implement animation for items usage
 
 * Phani Teja Kantamneni
+	* Add 2D Collider components to detect collision between player and enemy
+	* Trigger an event on Player-Enemy collision (The player character loses life)
+	* Find the assets for enemy sprite 
 
 
 ### 3. What tasks are blocked waiting on another team member?
