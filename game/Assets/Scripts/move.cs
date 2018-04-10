@@ -81,8 +81,11 @@ public class move : MonoBehaviour {
 		lastState = state;
 	}
 
+	// TODO: Fix player rotation when colliding with object
 	void OnTriggerEnter2D(Collider2D coll) {
-		Destroy (coll.gameObject);
+		if (coll.gameObject.CompareTag("Item")) {
+			//Destroy (coll.gameObject);
+			coll.gameObject.SetActive(false);
+		}
 	}
-
 }

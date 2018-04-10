@@ -490,7 +490,7 @@ GameObject:
   - component: {fileID: 1002595333}
   m_Layer: 0
   m_Name: item_1
-  m_TagString: Untagged
+  m_TagString: Item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -581,7 +581,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -607,6 +607,7 @@ GameObject:
   - component: {fileID: 1184750544}
   - component: {fileID: 1184750546}
   - component: {fileID: 1184750545}
+  - component: {fileID: 1184750547}
   m_Layer: 0
   m_Name: Tilemap_Base
   m_TagString: Untagged
@@ -5946,6 +5947,31 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!61 &1184750547
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1184750543}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 2.14271, y: 7.6769876}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 3.3629422, y: 2.8690243}
+  m_EdgeRadius: 0
 --- !u!1 &1214482267
 GameObject:
   m_ObjectHideFlags: 0
@@ -6052,6 +6078,7 @@ GameObject:
   - component: {fileID: 1441742006}
   - component: {fileID: 1441742008}
   - component: {fileID: 1441742007}
+  - component: {fileID: 1441742009}
   m_Layer: 0
   m_Name: Tilemap_Rock
   m_TagString: Untagged
@@ -6066,8 +6093,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1441742005}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_LocalPosition: {x: 0.3, y: 0, z: 0}
+  m_LocalScale: {x: 0.5374512, y: 0.5, z: 0.5}
   m_Children: []
   m_Father: {fileID: 665900499}
   m_RootOrder: 1
@@ -6117,7 +6144,7 @@ Tilemap:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1441742005}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Tiles:
   - first: {x: -8, y: -9, z: 0}
     second:
@@ -6622,6 +6649,31 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!68 &1441742009
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1441742005}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: -4.205661, y: -2.4282994}
+  - {x: -2.9969432, y: -3.2431483}
+  - {x: -2.3108025, y: -4.5375986}
+  - {x: -2.417016, y: -7.4442425}
+  - {x: -3.1070673, y: -8.79952}
+  - {x: -6.7891626, y: -8.900231}
+  - {x: -7.6041703, y: -8.221474}
+  - {x: -7.5317407, y: -4.123507}
+  - {x: -6.088707, y: -2.5945592}
+  - {x: -4.201966, y: -2.4272516}
 --- !u!1 &1580702797
 GameObject:
   m_ObjectHideFlags: 0
@@ -6812,7 +6864,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -6885,7 +6937,7 @@ GameObject:
   - component: {fileID: 1795169637}
   m_Layer: 0
   m_Name: item_2
-  m_TagString: Untagged
+  m_TagString: Item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6899,7 +6951,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -7005,7 +7057,7 @@ GameObject:
   - component: {fileID: 1852181214}
   m_Layer: 0
   m_Name: item_3
-  m_TagString: Untagged
+  m_TagString: Item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7019,7 +7071,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
