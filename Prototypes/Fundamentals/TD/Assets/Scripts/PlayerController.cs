@@ -33,6 +33,11 @@ public class PlayerController : MonoBehaviour {
             count += 1;
             SetCountText();
         }
+        else if (other.gameObject.CompareTag("monster"))
+        {
+            gameObject.SetActive(false);
+            WinText.text = "You lose";
+        }
     }
 
     void SetCountText()

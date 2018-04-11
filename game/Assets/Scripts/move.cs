@@ -1,10 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class move : MonoBehaviour {
 
-	Animator animator;
+    public Text loseText;
+    Animator animator;
 	string lastState;
 
 	float vertExtent;
@@ -17,7 +19,7 @@ public class move : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		animator = GetComponent<Animator> ();
-
+        loseText.text = "";
 		vertExtent = (Camera.main.orthographicSize) - offsetY;    
 		horzExtent = (Camera.main.orthographicSize * Screen.width / Screen.height) - offsetX;
 	}
@@ -83,9 +85,15 @@ public class move : MonoBehaviour {
 
 	// TODO: Fix player rotation when colliding with object
 	void OnTriggerEnter2D(Collider2D coll) {
-		if (coll.gameObject.CompareTag("Item")) {
-			//Destroy (coll.gameObject);
-			coll.gameObject.SetActive(false);
-		}
+        if (coll.gameObject.CompareTag("Item"))
+        {
+            //Destroy (coll.gameObject);
+            coll.gameObject.SetActive(false);
+        }
+        else if (coll.gameObject.CompareTag("enemy"))
+        {
+            gameObject.SetActive(false);
+            loseText.text = "You Lose";
+        }
 	}
 }
