@@ -384,7 +384,7 @@ GameObject:
   - component: {fileID: 408044369}
   - component: {fileID: 408044368}
   - component: {fileID: 408044367}
-  - component: {fileID: 408044366}
+  - component: {fileID: 408044370}
   m_Layer: 0
   m_Name: monster (2)
   m_TagString: enemy
@@ -392,17 +392,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &408044366
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 408044365}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8a80eaed8c257430a8207e5559594c3d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!58 &408044367
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -475,6 +464,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &408044370
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 408044365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1188c10017137804eaec5929b9443b8f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &452214346
 GameObject:
   m_ObjectHideFlags: 0
@@ -1196,6 +1196,7 @@ GameObject:
   - component: {fileID: 983520051}
   - component: {fileID: 983520050}
   - component: {fileID: 983520049}
+  - component: {fileID: 983520053}
   - component: {fileID: 983520052}
   m_Layer: 0
   m_Name: EventSystem
@@ -1258,6 +1259,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e316b57224be4429088771c158dda07c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &983520053
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 983520048}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ee7cd72986d5a74ca6d05916f144c19, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1002595329
