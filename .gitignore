@@ -1,4 +1,5 @@
 # Vim back up files
 *~
 *.swp
-
+*.DS_Store
+*.meta
