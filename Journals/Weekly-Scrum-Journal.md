@@ -64,7 +64,7 @@
 * Accessing public variables of other game objects
 * Waiting for enemy sprite to be created and eventually killed to display win/lose text
 
-## Week 1
+## Week 2
 
 ### 1. What tasks did I work on / complete?
 
@@ -73,6 +73,9 @@
 	* Found Assets for enemy sprites and items
 	* Edited sprite sheets and imported sprites into project 
 * Animesh Grover
+	* Added and updated Enemy movement
+	* looked into Enemy collision logic
+	* discussed and added few enemy sprites and stated using it in project
 * Watcharit Maharutainont
 * Phani Teja Kantamneni
 
@@ -83,6 +86,9 @@
 	* Design level 5
 	* Begin implementing level 5
 * Animesh Grover
+	* looking into Unity AI
+	* Implementing more complex enemy movements
+	* Implement Enemy damage and misc events
 * Watcharit Maharutainont
 * Phani Teja Kantamneni
 
