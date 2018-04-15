@@ -83,6 +83,8 @@
 	* Minor refactored codes for enemies movement
 	* Implemented animations for items
 * Phani Teja Kantamneni
+	* Added player-enemy collision detection
+	* Added an event trigger, whenever the player comes in direct contact with the enemy, the player sprite is disabled and "You Lose" text is displayed
 
 ### 2. What am I planning to work on next?
 
@@ -99,5 +101,8 @@
 	* Implement enemies factory
 	* Implement enemy animations
 * Phani Teja Kantamneni
+	* Add an event to display "You Lose" text when the enemy reaches the destination without being killed by the player
+	* Implement the funtionality to store the type of items collected by the player, based on the Tag of the item
+	* Add functionality for the usage of items collected by the player
 
 ### 3. What tasks are blocked waiting on another team member?
