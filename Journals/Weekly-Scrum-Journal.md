@@ -56,7 +56,7 @@
 * Phani Teja Kantamneni
 	* Add 2D Collider components to detect collision between player and enemy
 	* Trigger an event on Player-Enemy collision (The player character loses life)
-	* Find the assets for enemy sprite 
+	* Find the assets for enemy sprite
 
 
 ### 3. What tasks are blocked waiting on another team member?
@@ -71,12 +71,17 @@
 * Clifton Francis
 	* Added player collision detection with terrain to avoid travelling though objects
 	* Found Assets for enemy sprites and items
-	* Edited sprite sheets and imported sprites into project 
+	* Edited sprite sheets and imported sprites into project
 * Animesh Grover
 	* Added and updated Enemy movement
 	* looked into Enemy collision logic
 	* discussed and added few enemy sprites and stated using it in project
 * Watcharit Maharutainont
+	* Fixed bug - object rotation when collision occurred
+	* Added interfaces for Enemy and GameSystem objects
+	* Implemented MovePattern class to route enemies, based on configuration file
+	* Minor refactored codes for enemies movement
+	* Implemented animations for items
 * Phani Teja Kantamneni
 
 ### 2. What am I planning to work on next?
@@ -90,6 +95,9 @@
 	* Implementing more complex enemy movements
 	* Implement Enemy damage and misc events
 * Watcharit Maharutainont
+	* Implement GameSystem class template
+	* Implement enemies factory
+	* Implement enemy animations
 * Phani Teja Kantamneni
 
 ### 3. What tasks are blocked waiting on another team member?

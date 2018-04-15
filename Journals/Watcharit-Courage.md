@@ -5,3 +5,8 @@
   * We had a meeting to update our progress and we honestly told the truth of our progress as we showed all the works we did during the week to teammates.
   * We did tell what we are now stuck at to our teammates. We listed the blocked task in the weekly scrum journal so that each team member can help figure out the solution.
   * Since this is the first phase of our game development, we implemented a lot of prototypes to prove our game concept. We are willing to write new codes or refactor our prototypes when it comes to implement our actual game.
+
+### Week 2
+  * We threw some code away and wrote a new one to make it cleaner and easier to use.
+  * We continued to figure out about how to implement some features of the game. Again, we are willing to refactor it when necessary.
+  * We shared all of our progress so far and also the blocking tasks in the meeting. 
