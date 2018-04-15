@@ -9,3 +9,11 @@
        <li>Type of game we all were interested in developing for this project.</li>
        <li>Next task of get upto speed with Unity engine.</li>
        <li>What task each of us needs to do in order to complete level 1 with simple features.</li>
+	
+### Week 2
+* We discussed about difficulties faced during past week while researching and trying to implement certain features in Unity game engine.
+* Team has decided on completing level 1 by this week.
+* Erb has decided to work and implement the item usage.
+* I will be working on Enemy movement and interaction.
+* Phani is working with Item events
+* we have decided that each team member will be responsible in developing one level of the game and will implement design pattern based on the logic for that level. 
