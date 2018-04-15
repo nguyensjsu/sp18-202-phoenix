@@ -63,3 +63,27 @@
 
 * Accessing public variables of other game objects
 * Waiting for enemy sprite to be created and eventually killed to display win/lose text
+
+## Week 1
+
+### 1. What tasks did I work on / complete?
+
+* Clifton Francis
+	* Added player collision detection with terrain to avoid travelling though objects
+	* Found Assets for enemy sprites and items
+	* Edited sprite sheets and imported sprites into project 
+* Animesh Grover
+* Watcharit Maharutainont
+* Phani Teja Kantamneni
+
+### 2. What am I planning to work on next?
+
+* Clifton Francis
+	* Decide on design pattern to implement
+	* Design level 5
+	* Begin implementing level 5
+* Animesh Grover
+* Watcharit Maharutainont
+* Phani Teja Kantamneni
+
+### 3. What tasks are blocked waiting on another team member?
