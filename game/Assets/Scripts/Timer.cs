@@ -7,20 +7,33 @@ public class Timer : MonoBehaviour {
 
 	public Text timerText;
 	private float startTime;
+	private bool isStarted;
 
 	// Use this for initialization
 	void Start () {
-		// timer will start as soon as we enter game mode
-		startTime = Time.time;
-		
+
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		float time = Time.time - startTime;
-		string minutes = ((int) time / 60).ToString();
-		string seconds = (time % 60).ToString("00");
+		if (isStarted) {
+			float time = Time.time - startTime;
+			string minutes = ((int)time / 59).ToString ();
+			string seconds = (time % 59).ToString ("00");
 
-		timerText.text = "Time " + string.Format("{0:00}:{1:00}", minutes, seconds);
+			timerText.text = "Time " + string.Format ("{0:00}:{1:00}", minutes, seconds);
+		}
 	}
+
+	public void Run() {
+		if (startTime == 0.0f) {
+			startTime = Time.time;
+		}
+		isStarted = true;
+	}
+
+	public void Stop() {
+		isStarted = false;
+	}
+
 }

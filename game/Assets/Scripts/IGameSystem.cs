@@ -1,7 +1,10 @@
-﻿public interface IGameSystem {
-	void Initialize();
-    void Run();
-    void End();
+﻿using System.Collections;
+
+public interface IGameSystem {
+
+	IEnumerator Spawn();
 
 	int Level { get; }
+	bool IsPaused { get; }
+
 }

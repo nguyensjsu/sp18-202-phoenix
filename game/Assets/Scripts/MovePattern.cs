@@ -15,10 +15,10 @@ public class MovePattern {
 		TextAsset textAsset = (TextAsset)Resources.Load("Routes", typeof(TextAsset));
 		string routesFile = textAsset.text;
 		string[] steps = routesFile.Split('\n');
-		string[] endpoints = steps[level].Split(',');
+		string[] endpoints = steps[level].Split('|');
 		for (int step = 0; step < endpoints.Length; step += 1) {
-			float x = float.Parse(endpoints[step].Split('|')[0]);
-			float y = float.Parse(endpoints[step].Split('|')[1]);	
+			float x = float.Parse(endpoints[step].Split(',')[0]);
+			float y = float.Parse(endpoints[step].Split(',')[1]);	
 			patterns[level][step] = new Vector2(x, y);
 		}
 	}

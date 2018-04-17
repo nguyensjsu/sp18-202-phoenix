@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Level : MonoBehaviour {
 
@@ -10,6 +11,6 @@ public class Level : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		// level is set to the scene name
-		levelText.text = Application.loadedLevelName.ToString();
+		levelText.text = SceneManager.GetActiveScene().name;
 	}
 }
