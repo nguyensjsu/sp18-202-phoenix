@@ -6,18 +6,17 @@ using UnityEngine.UI;
 
 public class GameLevel1 : GameSystem, IGameSystem {
 
+	// change game level here
 	private static int LEVEL = 1;
 
 	private bool isPaused;
 	private Timer timer;
 	private MonsterFactory mf;
 
-	// Use this for initialization
 	void Start () {
 		Run ();
 	}
 
-	// Update is called once per frame
 	void Update () {
 		if (Input.GetButtonDown ("Cancel")) {
 			isPaused = this.ToggleGamePause ();
@@ -28,7 +27,7 @@ public class GameLevel1 : GameSystem, IGameSystem {
 		isPaused = false;
 		MovePattern.setInstance(LEVEL);
 
-		mf = new MonsterFactory (new Vector3(-11.5f, 0.4f, 1));
+		mf = new MonsterFactory (new Vector3(-11.5f, 0.4f, 1));	// starting coordinate for enemies
 		monsters = new ArrayList();
 		StartCoroutine (Spawn());
 
@@ -40,9 +39,10 @@ public class GameLevel1 : GameSystem, IGameSystem {
 	}
 
 	public override void End(){
-		
+
 	}
 
+	// how the enemies will be spawned, use enum "Monsters" to select the enemy you want to spawn
 	public IEnumerator Spawn() {
 		monsters.Add(mf.getMonster(Monsters.bt));
 		yield return new WaitForSeconds(2);
@@ -63,5 +63,5 @@ public class GameLevel1 : GameSystem, IGameSystem {
 			return isPaused;
 		}
 	}
-	
+
 }
