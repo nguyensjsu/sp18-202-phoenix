@@ -28,7 +28,7 @@ public class GameLevel1 : GameSystem, IGameSystem {
 		isPaused = false;
 		MovePattern.setInstance(LEVEL);
 
-		mf = new MonsterFactory (new Vector3(-8.5f, 0.4f, 1));
+		mf = new MonsterFactory (new Vector3(-11.5f, 0.4f, 1));
 		monsters = new ArrayList();
 		StartCoroutine (Spawn());
 
