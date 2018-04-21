@@ -118,6 +118,9 @@
 	* Looked into designing a main menu using just code as opposed to Unity's GUI.
 	* Design concepts for Level 5
 * Animesh Grover
+	* Decided to work with enemy sprites and movement and try to implement decorator pattern.
+	* Going through examples and tutorial that explain how to spawn different type of enemies
+	* went through tutorials and played around with enemy related events
 
 * Watcharit Maharutainont
 
@@ -129,6 +132,8 @@
 	* Implement the game's main menu with the command design pattern
 	* Begin implementing level 5
 * Animesh Grover
+	* Implement Design pattern into the Enemy spawn logic.
+	* Complete Level 3 implementation
 
 * Watcharit Maharutainont
 
