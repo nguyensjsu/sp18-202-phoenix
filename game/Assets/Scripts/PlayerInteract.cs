@@ -16,6 +16,19 @@ public class PlayerInteract : MonoBehaviour {
                 inventory.Additem(current);
             }
         }
+        if (Input.GetButtonDown("UseBomb"))
+        {
+            GameObject bomb = inventory.FindItem("Bomb");
+            if (bomb != null)
+            {
+                Transform pos = GameObject.FindGameObjectWithTag("Player").transform;
+                float x = pos.position.x;
+                float y = pos.position.y;
+                float z = pos.position.z;
+                currentScript = bomb.GetComponent<InteractionObject>();
+                currentScript.DoAnotherAction(x,y,z);
+            }
+        }
     }
 
     public void OnTriggerEnter2D(Collider2D other)

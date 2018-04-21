@@ -1160,6 +1160,53 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!1001 &752841967
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4419155233917974, guid: 00c46d245348b4a29b8a9c753507a8e3, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -5.93
+      objectReference: {fileID: 0}
+    - target: {fileID: 4419155233917974, guid: 00c46d245348b4a29b8a9c753507a8e3, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0.34
+      objectReference: {fileID: 0}
+    - target: {fileID: 4419155233917974, guid: 00c46d245348b4a29b8a9c753507a8e3, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4419155233917974, guid: 00c46d245348b4a29b8a9c753507a8e3, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4419155233917974, guid: 00c46d245348b4a29b8a9c753507a8e3, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4419155233917974, guid: 00c46d245348b4a29b8a9c753507a8e3, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4419155233917974, guid: 00c46d245348b4a29b8a9c753507a8e3, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4419155233917974, guid: 00c46d245348b4a29b8a9c753507a8e3, type: 2}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 61508921282205458, guid: 00c46d245348b4a29b8a9c753507a8e3,
+        type: 2}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 00c46d245348b4a29b8a9c753507a8e3, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &810120470
 GameObject:
   m_ObjectHideFlags: 0
@@ -1286,6 +1333,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inventoried: 1
+  type: 
 --- !u!212 &975816285
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1462,6 +1510,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inventoried: 1
+  type: Bomb
 --- !u!58 &1073127168
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -11487,7 +11536,7 @@ GameObject:
   - component: {fileID: 1591690646}
   m_Layer: 0
   m_Name: Bowser Jr.
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
