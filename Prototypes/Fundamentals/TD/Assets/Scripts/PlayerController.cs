@@ -8,8 +8,10 @@ public class PlayerController : MonoBehaviour {
     private Rigidbody2D rb2d;
     public float speed;
     private int count;
+    private int item_count = 0;
     public Text textCount;
     public Text WinText;
+    public GameObject item;
     void Start()
     {
         rb2d = GetComponent<Rigidbody2D>();
@@ -19,6 +21,11 @@ public class PlayerController : MonoBehaviour {
     }
     private void FixedUpdate()
     {
+        if (Input.GetKeyDown("space"))
+        {
+            item_count += 1;
+        }
+            
         float moveHorizontal = Input.GetAxis("Horizontal");
         float moveVertical = Input.GetAxis("Vertical");
         Vector2 movement = new Vector2(moveHorizontal, moveVertical);
@@ -31,6 +38,7 @@ public class PlayerController : MonoBehaviour {
         {
             other.gameObject.SetActive(false);
             count += 1;
+            item_count += 1;
             SetCountText();
         }
         else if (other.gameObject.CompareTag("monster"))
@@ -45,5 +53,10 @@ public class PlayerController : MonoBehaviour {
         textCount.text = "Count:" + count.ToString();
         if (count >= 3)
             WinText.text = "You Win";
+    }
+
+    void SetItemCountText()
+    {
+        
     }
 }
