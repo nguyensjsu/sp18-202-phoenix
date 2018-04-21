@@ -106,3 +106,34 @@
 	* Add functionality for the usage of items collected by the player
 
 ### 3. What tasks are blocked waiting on another team member?
+* N/A
+
+## Week 3
+
+### 1. What tasks did I work on / complete?
+
+* Clifton Francis
+	* Decided to work on Main Menu. I will be applying the design command pattern for the buttons.
+	* Went through the Creating a Main Menu Unity tutorial
+	* Looked into designing a main menu using just code as opposed to Unity's GUI.
+	* Design concepts for Level 5
+* Animesh Grover
+
+* Watcharit Maharutainont
+
+* Phani Teja Kantamneni
+
+### 2. What am I planning to work on next?
+
+* Clifton Francis
+	* Implement the game's main menu with the command design pattern
+	* Begin implementing level 5
+* Animesh Grover
+
+* Watcharit Maharutainont
+
+* Phani Teja Kantamneni
+
+### 3. What tasks are blocked waiting on another team member?
+* Phani was having issues placing items in a location relative to the player's coordinates.
+	* Clifton will help with finding out how to implement this functonality.
