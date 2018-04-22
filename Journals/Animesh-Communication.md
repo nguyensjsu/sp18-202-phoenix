@@ -17,3 +17,8 @@
 * I will be working on Enemy movement and interaction.
 * Phani is working with Item events
 * we have decided that each team member will be responsible in developing one level of the game and will implement design pattern based on the logic for that level. 
+
+### Week 3
+* This week the communication via WhatsApp and Scrum task sheet was plenty sufficient. Everyone was able to decide on the issues and the task people want to work on. 
+* Team members are also starting to look for places where any Design pattern could also be implemented. This will also mean more ingeration and sync will be needed.
+* Maintaining good communicaiton lines will be essential for smooth and efficient work. I will have to play more effective role and keep track that the team members are effectively speaking to each other.
