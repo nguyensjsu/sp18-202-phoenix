@@ -123,6 +123,10 @@
 	* went through tutorials and played around with enemy related events
 
 * Watcharit Maharutainont
+	* Implemented GameSystem and GameLevel1 templates
+	* Implemented enemies factory
+	* Implemented enemy animations
+	* Implemented spawning template for enemies
 
 * Phani Teja Kantamneni
 
@@ -136,6 +140,8 @@
 	* Complete Level 3 implementation
 
 * Watcharit Maharutainont
+	* Implement items factory
+	* Add more animations
 
 * Phani Teja Kantamneni
 
