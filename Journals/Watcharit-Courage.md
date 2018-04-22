@@ -9,4 +9,8 @@
 ### Week 2
   * We threw some code away and wrote a new one to make it cleaner and easier to use.
   * We continued to figure out about how to implement some features of the game. Again, we are willing to refactor it when necessary.
-  * We shared all of our progress so far and also the blocking tasks in the meeting. 
+  * We shared all of our progress so far and also the blocking tasks in the meeting.
+
+### Week 3
+  * As we continue to work on the project, we found some functionality which is not easy to implement. We did tell other team members and were willing to ask for help to get the project done as soon as possible.
+  * We cleared some codes or assets from the prototyping phase away and implemented new ones so that we can apply design patterns easier.
