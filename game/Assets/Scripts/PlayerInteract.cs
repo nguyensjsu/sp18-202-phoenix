@@ -7,9 +7,10 @@ public class PlayerInteract : MonoBehaviour {
     public GameObject current = null;
     public InteractionObject currentScript = null;
     public Inventory inventory;
+
     public void Update()
     {
-        if (Input.GetButtonDown("interact") && current)
+		if (Input.GetButtonDown("interact") && current)
         {
             if (currentScript.inventoried)
             {

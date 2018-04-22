@@ -1329,7 +1329,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 975816282}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1f1abf0791c0df24692bacc7ed1b722e, type: 3}
+  m_Script: {fileID: 11500000, guid: 1305f015847e0c741bc4b73d5994d137, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   inventoried: 1
@@ -1477,9 +1477,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 806a9d82b8303dc41bc59e86cdf95085, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  current: {fileID: 0}
-  currentScript: {fileID: 0}
-  inventory: {fileID: 0}
 --- !u!1 &1073127166
 GameObject:
   m_ObjectHideFlags: 0
@@ -1506,11 +1503,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1073127166}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1f1abf0791c0df24692bacc7ed1b722e, type: 3}
+  m_Script: {fileID: 11500000, guid: 1305f015847e0c741bc4b73d5994d137, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   inventoried: 1
-  type: Bomb
+  type: 
 --- !u!58 &1073127168
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -11704,7 +11701,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1591690636}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 806a9d82b8303dc41bc59e86cdf95085, type: 3}
+  m_Script: {fileID: 11500000, guid: 9f182cd857de51e44838e0cb5ecb043e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   current: {fileID: 0}
@@ -11718,7 +11715,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1591690636}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a94d0ce5be1f404b8e197234107c2c6, type: 3}
+  m_Script: {fileID: 11500000, guid: 32fa7531bfbf58b429d00cdf05475c11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   inventory:
