@@ -11,12 +11,8 @@ public class MonsterFactory : MonoBehaviour
 	}
 
 	public IMonster getMonster(Monsters monster){
-		if(monster == Monsters.bt){
-			GameObject m = Instantiate(Resources.Load("bt"), startingPoint, Quaternion.identity) as GameObject;
-			return m.GetComponent<IMonster> ();
-		} 
-
-		return null;
+		GameObject m = Instantiate(Resources.Load(monster.ToString()), startingPoint, Quaternion.identity) as GameObject;
+		return m.GetComponent<IMonster> ();
 	}
 }
 

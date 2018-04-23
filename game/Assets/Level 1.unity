@@ -1332,8 +1332,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1305f015847e0c741bc4b73d5994d137, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inventoried: 1
-  type: 
 --- !u!212 &975816285
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1506,8 +1504,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1305f015847e0c741bc4b73d5994d137, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inventoried: 1
-  type: 
 --- !u!58 &1073127168
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -11704,9 +11700,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f182cd857de51e44838e0cb5ecb043e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  current: {fileID: 0}
-  currentScript: {fileID: 0}
-  inventory: {fileID: 1591690646}
 --- !u!114 &1591690646
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11718,17 +11711,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32fa7531bfbf58b429d00cdf05475c11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inventory:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
 --- !u!1 &1639784543
 GameObject:
   m_ObjectHideFlags: 0

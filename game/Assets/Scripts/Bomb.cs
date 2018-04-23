@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Bomb : MonoBehaviour {
+public class Bomb : MonoBehaviour, IItem {
 
 	Animator animator;
 
@@ -13,12 +13,18 @@ public class Bomb : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		StartCoroutine(Boom());
+		StartCoroutine (Boom ());
 	}
 
 	IEnumerator Boom () {
 		animator.Play ("bomb");
-		yield return new WaitForSeconds(2);
+		yield return new WaitForSeconds(0.8f);
 		Destroy (this.gameObject);
+	}
+
+	public float TTL {
+		get {
+			return 20f;
+		}
 	}
 }

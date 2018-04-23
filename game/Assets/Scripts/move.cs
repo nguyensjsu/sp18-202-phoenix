@@ -19,7 +19,7 @@ public class move : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		animator = GetComponent<Animator> ();
-        loseText.text = "";
+//        loseText.text = "";
 		vertExtent = (Camera.main.orthographicSize) - offsetY;    
 		horzExtent = (Camera.main.orthographicSize * Screen.width / Screen.height) - offsetX;
 	}

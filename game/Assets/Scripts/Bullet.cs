@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Bullet : MonoBehaviour {
+public class Bullet : MonoBehaviour, IItem {
 
 	Animator animator;
 
@@ -13,6 +13,18 @@ public class Bullet : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-		animator.Play ("bullet");
+
+	}
+
+	IEnumerator Hit () {
+		animator.Play("bullet_hit");
+		yield return new WaitForSeconds(0.1f);
+		Destroy (this.gameObject);
+	}
+
+	public float TTL {
+		get {
+			return 15f;
+		}
 	}
 }

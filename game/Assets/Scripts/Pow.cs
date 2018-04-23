@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Pow : MonoBehaviour {
+public class Pow : MonoBehaviour, IItem {
 
 	Animator animator;
 
@@ -13,12 +13,18 @@ public class Pow : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-		StartCoroutine(Boom());
+		
 	}
 
 	IEnumerator Boom () {
 		animator.Play ("pow");
 		yield return new WaitForSeconds(2);
 		Destroy (this.gameObject);
+	}
+
+	public float TTL {
+		get {
+			return 5f;
+		}
 	}
 }
