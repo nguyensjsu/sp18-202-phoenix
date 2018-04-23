@@ -129,6 +129,10 @@
 	* Implemented spawning template for enemies
 
 * Phani Teja Kantamneni
+	* Implemented inventory, to store items with the press of a key
+	* Implemented item retrieval from the inventory, with press of item specific keys
+	* Implemented placing the retrieved item at desired location
+	* Fixed a bug and a NullReferenceException related to the inventory.
 
 ### 2. What am I planning to work on next?
 
@@ -144,6 +148,9 @@
 	* Add more animations
 
 * Phani Teja Kantamneni
+	* Implement enemy health decline/death as it comes into contact with the items placed in it's path
+	* Implement observer design pattern, when the enemy crosses the finish line
+	* Design and implement level 3.
 
 ### 3. What tasks are blocked waiting on another team member?
 * Phani was having issues placing items in a location relative to the player's coordinates.

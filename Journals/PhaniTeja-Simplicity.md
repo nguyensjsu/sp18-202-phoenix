@@ -6,3 +6,6 @@ We started off by meeting up and discussing various ideas for the hackathon proj
 
 ### Week-2
 We divided the tasks into simpler modules and each member selected a few modules and started to work on them. This further division of tasks gave us more insight as to which modules might be dependent, thereby reducing the possibility of being blocked by another task, no matter how small. As a result by the end of the week, we had a working level-1, with just few modifications pending.
+
+### Week-3
+We discussed about the modules we divided the previous week, and using which design patterns they can be implemented. We found out that even simple events like the enemy crossing the finish line, creation of enemies, creation of menu items, etc can be attributed to design patterns and implemented using them. We divided up the tasks accordingly and started to work on them. 
