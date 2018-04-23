@@ -17,18 +17,26 @@ public class PlayerInteract : MonoBehaviour {
                 inventory.Additem(current);
             }
         }
-        if (Input.GetButtonDown("UseBomb"))
+        try
         {
-            GameObject bomb = inventory.FindItem("Bomb");
-            if (bomb != null)
+            if (Input.GetButtonDown("UseBomb"))
             {
-                Transform pos = GameObject.FindGameObjectWithTag("Player").transform;
-                float x = pos.position.x;
-                float y = pos.position.y;
-                float z = pos.position.z;
-                currentScript = bomb.GetComponent<InteractionObject>();
-                currentScript.DoAnotherAction(x,y,z);
+                GameObject bomb = inventory.FindItem("Bomb");
+                if (bomb != null)
+                {
+                    inventory.RemoveItem(bomb);
+                    Transform pos = GameObject.FindGameObjectWithTag("Player").transform;
+                    float x = pos.position.x;
+                    float y = pos.position.y;
+                    float z = pos.position.z;
+                    currentScript = bomb.GetComponent<InteractionObject>();
+                    currentScript.DoAnotherAction(x, y, z);
+                }
             }
+        }
+        catch (System.NullReferenceException e)
+        {
+
         }
     }
 
