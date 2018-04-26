@@ -13,6 +13,8 @@ public class MainMenu : MonoBehaviour {
 	public Button quitButton;
 	public Button easyButton;
 	public Button hardButton;
+	public Image easyButtonImage;
+	public Image hardButtonImage;
 	public Button difficultyBackButton;
 	public Button aboutBackButton;
 
@@ -24,16 +26,18 @@ public class MainMenu : MonoBehaviour {
 	private ICommand selectHardDifficulty;
 	private ICommand displayMenu;
 
+	private bool easySelected = true;
+
 	void Start () {
 		MenuReceiver receiver = new MenuReceiver();
 		receiver.setPanels(menuPanel, difficultyPanel, aboutPanel);
+		hardButtonImage.enabled = false;
 
 		loadLevel1 = new LoadLevelCommand();
 		displayDifficultyPanel = new DisplayDifficultyPanelCommand();
 		displayAboutPanel = new DisplayAboutPanelCommand();
 		quitGame = new QuitGameCommand();
 
-		// TODO: Make these difficulty buttons appear pressed down when selected
 		selectEasyDifficulty = new SelectEasyDifficultyCommand();
 		selectHardDifficulty = new SelectHardDifficultyCommand();
 		displayMenu = new DisplayMenuPanelCommand();
@@ -73,14 +77,26 @@ public class MainMenu : MonoBehaviour {
 	}
 
 	private void handleEasyButtonClick() {
+		easySelected = true;
 		selectEasyDifficulty.execute();
 	}
 
 	private void handleHardButtonClick() {
+		easySelected = false;
 		selectHardDifficulty.execute();
 	}
 
 	private void handleBackButtonClick() {
 		displayMenu.execute();
+	}
+
+	public void Update() {
+		if (easySelected) {
+			easyButtonImage.enabled = true;
+			hardButtonImage.enabled = false;
+		} else {
+			easyButtonImage.enabled = false;
+			hardButtonImage.enabled = true;
+		}
 	}
 }
