@@ -53,4 +53,9 @@ public class BlueTurtle : MonoBehaviour, IMonster {
 			m.Move (this);
 		}
 	}
+
+    public void Attack()
+    {
+
+    }
 }
