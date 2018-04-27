@@ -22,4 +22,13 @@ public class Coin : MonoBehaviour, IItem {
 			return 10f;
 		}
 	}
+
+	void OnTriggerEnter2D(Collider2D coll) {
+		if (coll.gameObject.CompareTag("Player"))
+		{
+			Hero hero = coll.gameObject.GetComponent<Hero>();
+			hero.step += 0.005f;
+			Destroy (this.gameObject);
+		}
+	}
 }

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class move : MonoBehaviour {
+public class Hero : MonoBehaviour {
 
     public Text loseText;
     Animator animator;
@@ -12,7 +12,7 @@ public class move : MonoBehaviour {
 	float vertExtent;
 	float horzExtent;
 
-	float step = 0.05f;
+	public float step = 0.05f;
 	float offsetX = 0.45f;
 	float offsetY = 0.5f;
 

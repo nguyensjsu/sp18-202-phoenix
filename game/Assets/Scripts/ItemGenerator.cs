@@ -39,7 +39,7 @@ public class ItemGenerator : MonoBehaviour
 		} else if (value > 0.20f && value < 0.30f) {
 			return Items.fire;
 		} else if (value > 0.05f && value < 0.20f) {
-			return Items.coin;
+			
 		}
 		return Items.pow;
 	}
