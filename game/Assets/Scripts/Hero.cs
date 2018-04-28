@@ -8,6 +8,7 @@ public class Hero : MonoBehaviour {
     public Text loseText;
     Animator animator;
 	string lastState;
+	private string direction;
 
 	float vertExtent;
 	float horzExtent;
@@ -16,6 +17,9 @@ public class Hero : MonoBehaviour {
 	float offsetX = 0.45f;
 	float offsetY = 0.5f;
 
+	void Awake() {
+		lastState = "idle_move_down";
+	}
 	// Use this for initialization
 	void Start () {
 		animator = GetComponent<Animator> ();
@@ -35,6 +39,8 @@ public class Hero : MonoBehaviour {
 					this.transform.position = position;
 				}
 
+				direction = "left";
+
 				if (!Input.GetKey ("right")) {
 					state = "move_left";
 					animator.Play (state);
@@ -47,6 +53,8 @@ public class Hero : MonoBehaviour {
 					this.transform.position = position;
 				}
 
+				direction = "right";
+
 				if (!Input.GetKey ("left")) {
 					state = "move_right";
 					animator.Play (state);
@@ -58,7 +66,9 @@ public class Hero : MonoBehaviour {
 				if (position.y < vertExtent) {
 					this.transform.position = position;
 				}
-				
+
+				direction = "up";
+
 				if (!Input.GetKey ("right") && !Input.GetKey ("left") && !Input.GetKey ("down")) {
 					state = "move_up";
 					animator.Play (state);
@@ -70,7 +80,9 @@ public class Hero : MonoBehaviour {
 				if (position.y > -vertExtent) {
 					this.transform.position = position;
 				}
-				
+
+				direction = "down";
+
 				if (!Input.GetKey ("right") && !Input.GetKey ("left") && !Input.GetKey ("up")) {
 					state = "move_down";
 					animator.Play (state);
@@ -96,5 +108,9 @@ public class Hero : MonoBehaviour {
             gameObject.SetActive(false);
             loseText.text = "You Lose";
         }
+	}
+
+	public string getDirection() {
+		return direction;
 	}
 }
