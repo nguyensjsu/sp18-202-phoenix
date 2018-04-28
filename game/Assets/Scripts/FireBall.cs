@@ -24,6 +24,7 @@ public class FireBall : MonoBehaviour {
 		if (Input.GetButtonDown("Fire1") && Time.time > nextFire) {
 			Vector3 pos = player.position;
 			string direction = ((Hero)playerObject.GetComponent<Hero>()).getDirection();
+			Vector3 zero = new Vector3(0, 0, 0);
 
 			// TODO: Fix up/down AND left/right to shoot left/right
 			// TODO: Add code to collide with and damage enemy
@@ -40,6 +41,7 @@ public class FireBall : MonoBehaviour {
 			} else if (direction.Contains("left")) {
 				spawnPosition = pos + Vector3.left * spawnDistance;
 				fireball = Instantiate(projectile, spawnPosition, player.rotation) as Rigidbody;
+				//fireball = Instantiate(projectile, spawnPosition, zero) as Rigidbody;
 				fireball.velocity = transform.TransformDirection(Vector3.left * speed);
 			} else if (direction.Equals("right")) {
 				spawnPosition = pos + Vector3.right * spawnDistance;
