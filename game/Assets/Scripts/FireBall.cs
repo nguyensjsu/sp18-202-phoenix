@@ -28,7 +28,6 @@ public class FireBall : MonoBehaviour {
 
 			// TODO: Fix up/down AND left/right to shoot left/right
 			// TODO: Add code to collide with and damage enemy
-			// TODO: Destroy fireball objects once they leave the game area
 			// TODO: Refactor similar code below to a method
 			if (direction.Contains("up")) {
 				spawnPosition = pos + Vector3.up * spawnDistance;
