@@ -32,6 +32,34 @@ public class Hero : MonoBehaviour {
 	void Update () {
 		string state = null;
 		if (Time.timeScale == 1) {
+			if (Input.GetKey ("up")) {
+				Vector3 position = this.transform.position;
+				position.y += step;
+				if (position.y < vertExtent) {
+					this.transform.position = position;
+				}
+					
+				direction = "up";
+
+				if (!Input.GetKey ("right") && !Input.GetKey ("left") && !Input.GetKey ("down")) {
+					state = "move_up";
+					animator.Play (state);
+				}
+			}
+			if (Input.GetKey ("down")) {
+				Vector3 position = this.transform.position;
+				position.y -= step;
+				if (position.y > -vertExtent) {
+					this.transform.position = position;
+				}
+
+				direction = "down";
+
+				if (!Input.GetKey ("right") && !Input.GetKey ("left") && !Input.GetKey ("up")) {
+					state = "move_down";
+					animator.Play (state);
+				}
+			}
 			if (Input.GetKey ("left")) {
 				Vector3 position = this.transform.position;
 				position.x -= step;
@@ -60,39 +88,12 @@ public class Hero : MonoBehaviour {
 					animator.Play (state);
 				}
 			}
-			if (Input.GetKey ("up")) {
-				Vector3 position = this.transform.position;
-				position.y += step;
-				if (position.y < vertExtent) {
-					this.transform.position = position;
-				}
 
-				direction = "up";
-
-				if (!Input.GetKey ("right") && !Input.GetKey ("left") && !Input.GetKey ("down")) {
-					state = "move_up";
-					animator.Play (state);
-				}
-			}
-			if (Input.GetKey ("down")) {
-				Vector3 position = this.transform.position;
-				position.y -= step;
-				if (position.y > -vertExtent) {
-					this.transform.position = position;
-				}
-
-				direction = "down";
-
-				if (!Input.GetKey ("right") && !Input.GetKey ("left") && !Input.GetKey ("up")) {
-					state = "move_down";
-					animator.Play (state);
-				}
-			}
-			
 			if (state == null) {
-				animator.Play ("idle_" + lastState);
+				animator.Play("idle_" + lastState);
+			} else {
+				lastState = state;
 			}
-			lastState = state;
 		}
 	}
 

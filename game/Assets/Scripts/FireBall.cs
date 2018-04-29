@@ -12,42 +12,35 @@ public class FireBall : MonoBehaviour {
 	private float nextFire;
 	private GameObject playerObject;
 	private Transform player;
-	private Vector3 spawnPosition;
-	private Rigidbody fireball;
 
 	void Start () {
-		player = GetComponent<Transform>();
 		playerObject = GameObject.Find("Bowser Jr.");
+		player = GetComponent<Transform>();
 	}
 
 	void Update () {
 		if (Input.GetButtonDown("Fire1") && Time.time > nextFire) {
-			Vector3 pos = player.position;
+			Vector3 position = player.position;
+			Quaternion rotation = player.rotation;
 			string direction = ((Hero)playerObject.GetComponent<Hero>()).getDirection();
-			Vector3 zero = new Vector3(0, 0, 0);
-
-			// TODO: Fix up/down AND left/right to shoot left/right
-			// TODO: Add code to collide with and damage enemy
-			// TODO: Refactor similar code below to a method
-			if (direction.Contains("up")) {
-				spawnPosition = pos + Vector3.up * spawnDistance;
-				fireball = Instantiate(projectile, spawnPosition, player.rotation) as Rigidbody;
-				fireball.velocity = transform.TransformDirection(Vector3.up * speed);
-			} else if (direction.Contains("down")) {
-				spawnPosition = pos + Vector3.down * spawnDistance;
-				fireball = Instantiate(projectile, spawnPosition, player.rotation) as Rigidbody;
-				fireball.velocity = transform.TransformDirection(Vector3.down * speed);
-			} else if (direction.Contains("left")) {
-				spawnPosition = pos + Vector3.left * spawnDistance;
-				fireball = Instantiate(projectile, spawnPosition, player.rotation) as Rigidbody;
-				//fireball = Instantiate(projectile, spawnPosition, zero) as Rigidbody;
-				fireball.velocity = transform.TransformDirection(Vector3.left * speed);
-			} else if (direction.Equals("right")) {
-				spawnPosition = pos + Vector3.right * spawnDistance;
-				fireball = Instantiate(projectile, spawnPosition, player.rotation) as Rigidbody;
-				fireball.velocity = transform.TransformDirection(Vector3.right * speed);
-			}
 			nextFire = Time.time + fireRate;
+
+			// TODO: Add code to damage enemy
+			if (direction.Equals("up")) {
+				shoot(position, Vector3.up, rotation);
+			} else if (direction.Equals("down")) {
+				shoot(position, Vector3.down, rotation);
+			} else if (direction.Equals("left")) {
+				shoot(position, Vector3.left, rotation);
+			} else if (direction.Equals("right")) {
+				shoot(position, Vector3.right, rotation);
+			}
 		}
+	}
+
+	private void shoot(Vector3 pos, Vector3 direction, Quaternion rotation) {
+		Vector3 spawnPosition = pos + direction * spawnDistance;
+		Rigidbody fireball = Instantiate(projectile, spawnPosition, rotation) as Rigidbody;
+		fireball.velocity = transform.TransformDirection(direction * speed);
 	}
 }
