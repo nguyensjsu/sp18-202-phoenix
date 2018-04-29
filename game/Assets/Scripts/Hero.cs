@@ -18,7 +18,7 @@ public class Hero : MonoBehaviour {
 	float offsetY = 0.5f;
 
 	void Awake() {
-		lastState = "idle_move_down";
+		lastState = "move_down";
 	}
 	// Use this for initialization
 	void Start () {
@@ -38,7 +38,7 @@ public class Hero : MonoBehaviour {
 				if (position.y < vertExtent) {
 					this.transform.position = position;
 				}
-					
+
 				direction = "up";
 
 				if (!Input.GetKey ("right") && !Input.GetKey ("left") && !Input.GetKey ("down")) {
