@@ -22,3 +22,9 @@
 * This week the communication via WhatsApp and Scrum task sheet was plenty sufficient. Everyone was able to decide on the issues and the task people want to work on. 
 * Team members are also starting to look for places where any Design pattern could also be implemented. This will also mean more ingeration and sync will be needed.
 * Maintaining good communicaiton lines will be essential for smooth and efficient work. I will have to play more effective role and keep track that the team members are effectively speaking to each other.
+
+### Week 4
+* This week also the communication via WhatsApp and Scrum task sheet had a few tasks left. Everyone was able to decide on the issues and the task people want to work on. 
+* Since we are on the final stage of our project many tasks are linked/dependent on other tasks which makes proper communication very important.
+* Team members are also discussing and planning which design pattern each of us will implement and will use the best design pattern to present it during our class presentation.
+* Maintaining good communicaiton lines will be essential for smooth and efficient work. I will have to play more effective role and keep track that the team members are effectively speaking to each other.
