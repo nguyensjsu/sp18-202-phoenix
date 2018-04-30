@@ -12269,6 +12269,7 @@ GameObject:
   - component: {fileID: 1591690645}
   - component: {fileID: 1591690646}
   - component: {fileID: 1591690647}
+  - component: {fileID: 1591690648}
   m_Layer: 0
   m_Name: Bowser Jr.
   m_TagString: Player
@@ -12358,10 +12359,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1591690636}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6052671cc31b13c44866a48419c94e1e, type: 3}
+  m_Script: {fileID: 11500000, guid: b08d1fdea26e17146b8687307569efe7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  loseText: {fileID: 586603180}
+  loseText: {fileID: 0}
   step: 0.05
 --- !u!61 &1591690641
 BoxCollider2D:
@@ -12481,11 +12482,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71fa8f40ffddb2640ba3c641d6c9f093, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  projectile: {fileID: 54339738610905992, guid: 99096dbbd4ad3c34ab3cf518a3f5f365,
-    type: 2}
-  fireRate: 0.5
-  speed: 10
-  spawnDistance: 0.75
+--- !u!114 &1591690648
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1591690636}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 225edc5bf556e9444a7a2f11a7f2c41b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectile: {fileID: 0}
+  fireRate: 0
+  speed: 0
+  spawnDistance: 0
 --- !u!1 &1639784543
 GameObject:
   m_ObjectHideFlags: 0
@@ -12839,8 +12850,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c4af526e09d58a84ab86e8b36bfa7366, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 5
-  youLose: {fileID: 586603180}
 --- !u!114 &1894547457
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12852,7 +12861,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f24c077ca15d9d94e82ea765d45f3f86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  youLose: {fileID: 586603180}
 --- !u!1001 &1963842300
 Prefab:
   m_ObjectHideFlags: 0
