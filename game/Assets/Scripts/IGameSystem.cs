@@ -6,5 +6,6 @@ public interface IGameSystem {
 
 	int Level { get; }
 	bool IsPaused { get; }
+	bool IsOver { get; }
 
 }

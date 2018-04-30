@@ -17,7 +17,7 @@ public class BlueTurtle : MonoBehaviour, IMonster {
     }
     // Use this for initialization
     void Start () {
-
+		
 	}
 
 	// Update is called once per frame

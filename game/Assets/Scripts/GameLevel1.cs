@@ -9,8 +9,6 @@ public class GameLevel1 : GameSystem, IGameSystem {
 	// change game level here
 	private static int LEVEL = 1;
 
-	private bool isPaused;
-	private Timer timer;
 	private MonsterFactory mf;
 	private ItemGenerator ig;
 
@@ -19,31 +17,21 @@ public class GameLevel1 : GameSystem, IGameSystem {
 	}
 
 	void Update () {
-		if (Input.GetButtonDown ("Cancel")) {
-			isPaused = this.ToggleGamePause ();
-		}
+		observePauseButton ();
+		observeMonsters ();
 	}
 
 	public override void Initialize(){
-		isPaused = false;
+		Init ();
 		MovePattern.setInstance(LEVEL);
-
+		ig = new ItemGenerator (0.8f); // items spawn rate
 		mf = new MonsterFactory (new Vector3(-11.5f, 0.4f, 1));	// starting coordinate for enemies
-		monsters = new ArrayList();
-
-		ig = new ItemGenerator (0.8f);
-
-		timer = GameObject.Find ("Canvas/Timer Text").GetComponent<Timer>();
 	}
 
 	public override void Play(){
 		timer.Run ();
 		StartCoroutine (Spawn());
 		StartCoroutine (ig.Generate ());
-	}
-
-	public override void End(){
-
 	}
 
 	// how the enemies will be spawned, use enum "Monsters" to select the enemy you want to spawn
@@ -53,7 +41,14 @@ public class GameLevel1 : GameSystem, IGameSystem {
 		monsters.Add(mf.getMonster(Monsters.bt));
 		yield return new WaitForSeconds(2);
 		monsters.Add(mf.getMonster(Monsters.bt));
+		yield return new WaitForSeconds(8);
+		monsters.Add(mf.getMonster(Monsters.bt));
 		yield return new WaitForSeconds(2);
+		monsters.Add(mf.getMonster(Monsters.bt));
+		yield return new WaitForSeconds(2);
+		monsters.Add(mf.getMonster(Monsters.bt));
+
+		numberOfMonsters = monsters.Count;
 	}
 
 	public int Level {
@@ -65,6 +60,12 @@ public class GameLevel1 : GameSystem, IGameSystem {
 	public bool IsPaused {
 		get {
 			return isPaused;
+		}
+	}
+
+	public bool IsOver {
+		get {
+			return isOver;
 		}
 	}
 
