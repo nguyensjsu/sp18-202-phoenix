@@ -13,7 +13,7 @@ public class Bomb : MonoBehaviour, IItem {
 	
 	// Update is called once per frame
 	void Update () {
-		StartCoroutine (Boom ());
+		//StartCoroutine (Boom ());
 	}
 
 	IEnumerator Boom () {
