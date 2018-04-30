@@ -7,7 +7,15 @@ public class PlayerInteract : MonoBehaviour {
     public GameObject current = null;
     public InteractionObject currentScript = null;
     public Inventory inventory;
+    public GameObject bt;
+    public BlueTurtle bt_script;
 
+    private void Awake()
+    {
+        bt = GameObject.FindGameObjectWithTag("enemy");
+        bt_script = bt.GetComponent<BlueTurtle>();
+        bt_script.SendMessage("AddObserver", this);
+    }
     public void Update()
     {
 		if (Input.GetButtonDown("interact") && current)
@@ -58,5 +66,10 @@ public class PlayerInteract : MonoBehaviour {
                 current = null;
             }
         }
+    }
+
+    public void UpdateState()
+    {
+        this.gameObject.SetActive(false);
     }
 }

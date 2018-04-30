@@ -8,9 +8,15 @@ public class BlueTurtle : MonoBehaviour, IMonster {
 	private int speed = 1;
 	private int step = 0;
 	private MovePattern m;
+    public List<MonoBehaviour> observers = new List<MonoBehaviour>();
 
-	// Use this for initialization
-	void Start () {
+    public void AddObserver(MonoBehaviour observer)
+    {
+        Debug.Log("In AddObserver");
+        observers.Add(observer);
+    }
+    // Use this for initialization
+    void Start () {
 
 	}
 
@@ -57,5 +63,14 @@ public class BlueTurtle : MonoBehaviour, IMonster {
     public void Attack()
     {
 
+    }
+
+    public void NotifyAll()
+    {
+        Debug.Log("In NotifyAll");
+        foreach (MonoBehaviour observer in observers)
+        {
+            observer.SendMessage("UpdateState");
+        }
     }
 }
