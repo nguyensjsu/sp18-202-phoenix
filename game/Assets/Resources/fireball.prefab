@@ -43,6 +43,7 @@ GameObject:
   - component: {fileID: 58570831338966240}
   - component: {fileID: 114518396142879988}
   - component: {fileID: 114442028325426084}
+  - component: {fileID: 114928817413940818}
   m_Layer: 0
   m_Name: collision_workaround
   m_TagString: fireball
@@ -136,7 +137,7 @@ Animator:
   m_GameObject: {fileID: 1069377829941092}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: f3e1aca35b8db444ba21041964f39014, type: 2}
+  m_Controller: {fileID: 9100000, guid: 0ab2c3e7955ae4f2389bd3e01048c0b3, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -152,7 +153,7 @@ Animation:
   m_GameObject: {fileID: 1069377829941092}
   m_Enabled: 1
   serializedVersion: 3
-  m_Animation: {fileID: 7400000, guid: 9c64c629e5f42794497045e9a50d8ddf, type: 2}
+  m_Animation: {fileID: 7400000, guid: 56224700cc4984418a9860cd12fd5b2c, type: 2}
   m_Animations: []
   m_WrapMode: 0
   m_PlayAutomatically: 1
@@ -178,6 +179,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a923aa1132ab81b4c812582a0aa7b93f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114928817413940818
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1955111779973116}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30ce101020fa5489396f894c5a2788b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!136 &136992947231960980
