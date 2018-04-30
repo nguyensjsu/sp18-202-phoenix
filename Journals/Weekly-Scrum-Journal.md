@@ -155,3 +155,34 @@
 ### 3. What tasks are blocked waiting on another team member?
 * Phani was having issues placing items in a location relative to the player's coordinates.
 	* Clifton will help with finding out how to implement this functonality.
+
+## Week 4
+
+### 1. What tasks did I work on / complete?
+
+* Clifton Francis
+	
+* Animesh Grover
+	* Implemented Strategy pattern when spawning different type of monsters with different health and move speed based on the difficulty level selected from the menu
+	* Worked on level 3 scripts
+	* worked with enemy routes for different levels
+	
+* Watcharit Maharutainont
+
+* Phani Teja Kantamneni
+	
+
+### 2. What am I planning to work on next?
+
+* Clifton Francis
+	
+* Animesh Grover
+	* complete all code realated tasks
+	* find any relevent video clips which could be used when making video for the game.
+	
+* Watcharit Maharutainont
+	
+* Phani Teja Kantamneni
+	
+### 3. What tasks are blocked waiting on another team member?
+
