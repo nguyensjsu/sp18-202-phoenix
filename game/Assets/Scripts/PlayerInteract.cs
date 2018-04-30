@@ -33,12 +33,28 @@ public class PlayerInteract : MonoBehaviour {
                 if (bomb != null)
                 {
                     inventory.RemoveItem(bomb);
-                    Transform pos = GameObject.FindGameObjectWithTag("Player").transform;
-                    float x = pos.position.x;
-                    float y = pos.position.y;
-                    float z = pos.position.z;
+					GameObject playerObject = GameObject.FindGameObjectWithTag("Player");
+					Vector3 pos = playerObject.transform.position;
+
+					string direction = ((Hero)playerObject.GetComponent<Hero>()).getDirection();
+
+					switch(direction) {
+					case "up":
+						pos += Vector3.up;
+						break;
+					case "down":
+						pos += Vector3.down;
+						break;
+					case "left":
+						pos += Vector3.left;
+						break;
+					case "right":
+						pos += Vector3.right;
+						break;
+					}
+
                     currentScript = bomb.GetComponent<InteractionObject>();
-                    currentScript.DoAnotherAction(x, y, z);
+					currentScript.DoAnotherAction(pos);
                 }
             }
         }

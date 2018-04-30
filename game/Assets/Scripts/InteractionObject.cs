@@ -21,9 +21,10 @@ public class InteractionObject : MonoBehaviour {
     {
         gameObject.SetActive(false);
     }
-    public void DoAnotherAction(float x, float y, float z)
+
+	public void DoAnotherAction(Vector3 position)
     {
-        gameObject.transform.position = new Vector3(x, y, z);
+		gameObject.transform.position = position;
         gameObject.SetActive(true);
     }
 
