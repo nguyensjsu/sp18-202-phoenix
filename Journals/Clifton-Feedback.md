@@ -10,3 +10,6 @@ We had to decide which assets we were going to use to for our video game sprites
 Design patterns were discussed. We all gave feedback on design pattern that will apply to our game and possible participants for each pattern. 
 
 Ideas for automated tests were discussed. We will look into how to add tests to Unity's game engine so we can possibly run the tests before commiting and pushing code.
+
+### Week 4
+ We held a longer meeting where we coded side by side (hackathon style) and discussed final features required to have a fully functioning game. Lots of features were added to our game this week. We demoed all features and discussed improvements. We also fixed an annoying object/script reference issue we were all facing with Unity. Some meta files were not being pushed into our Git repo. Thankfully, we no longer have to spend time fixing these references everytime we pull from Github.

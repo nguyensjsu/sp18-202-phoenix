@@ -161,7 +161,11 @@
 ### 1. What tasks did I work on / complete?
 
 * Clifton Francis
-	
+	* Fixed placing bombs in the correct location
+	* Implemented main menu with command design pattern
+	* Made Bowser Jr. shoot fireballs
+	* Made main menu display after player loses a level
+	* Worked on Mario animations and made Mario follow Bowser Jr.
 * Animesh Grover
 	* Implemented Strategy pattern when spawning different type of monsters with different health and move speed based on the difficulty level selected from the menu
 	* Worked on level 3 scripts
@@ -176,7 +180,11 @@
 ### 2. What am I planning to work on next?
 
 * Clifton Francis
-	
+	* Add Luigi animations
+	* Implement level 5
+	* Set difficulty level from player's choice in main menu
+	* Work on displaying number of bombs and number of fireball shots left
+	* Record audio for our promotional video
 * Animesh Grover
 	* complete all code realated tasks
 	* find any relevent video clips which could be used when making video for the game.
@@ -186,4 +194,5 @@
 * Phani Teja Kantamneni
 	
 ### 3. What tasks are blocked waiting on another team member?
+* Waiting on observer pattern to be updated so we can move to next level once all enemies are destroyed
 
