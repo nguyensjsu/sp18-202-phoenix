@@ -171,11 +171,14 @@
 	* Worked on level 3 scripts
 	* worked with enemy routes for different levels
 	* work on Damage recieved by the monsters
-	
+
 * Watcharit Maharutainont
+	* Implemented items factory
+	* Added item animations
+	* Fixed script referencing problem
 
 * Phani Teja Kantamneni
-	
+
 
 ### 2. What am I planning to work on next?
 
@@ -188,11 +191,14 @@
 * Animesh Grover
 	* complete all code realated tasks
 	* find any relevent video clips which could be used when making video for the game.
-	
+
 * Watcharit Maharutainont
-	
+	* Implement another game level
+	* Add functionality to items
+	* Refactor GameSystem and GameLevel1 classes
+
+
 * Phani Teja Kantamneni
-	
+
 ### 3. What tasks are blocked waiting on another team member?
 * Waiting on observer pattern to be updated so we can move to next level once all enemies are destroyed
-

@@ -14,3 +14,8 @@
 ### Week 3
   * As we continue to work on the project, we found some functionality which is not easy to implement. We did tell other team members and were willing to ask for help to get the project done as soon as possible.
   * We cleared some codes or assets from the prototyping phase away and implemented new ones so that we can apply design patterns easier.
+
+### Week 4
+  * We changed some class design in order to make it more generic and easy to use further more in our project.
+  * We updated all of our progress more frequently as we are on the final phase of development.
+  * We removed some of our prototype assets to make our game cleaner.
