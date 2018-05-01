@@ -9,3 +9,6 @@ We divided the tasks into simpler modules and each member selected a few modules
 
 ### Week-3
 We discussed about the modules we divided the previous week, and using which design patterns they can be implemented. We found out that even simple events like the enemy crossing the finish line, creation of enemies, creation of menu items, etc can be attributed to design patterns and implemented using them. We divided up the tasks accordingly and started to work on them. 
+
+### Week-4
+We each implemented the design patterns we were assigned. As the project was reaching the final phase, we started to integrate the pieces all of implemented individually. We ran into a few script reference errors every time someone made a push, but sorted them out in the end. 

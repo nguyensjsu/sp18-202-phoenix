@@ -178,7 +178,9 @@
 	* Fixed script referencing problem
 
 * Phani Teja Kantamneni
-
+	* Implemented enemy health decline/death
+	* Implemented observer pattern when the enemy crosses the finish line, all the gameObjects in the scene get diabled and the lose text is diplayed
+	* Modified the bomb inventory script
 
 ### 2. What am I planning to work on next?
 
@@ -197,8 +199,9 @@
 	* Add functionality to items
 	* Refactor GameSystem and GameLevel1 classes
 
-
 * Phani Teja Kantamneni
+	* Modify the observer pattern to signify the end of the game when all the enemies are killed or when the player dies
+	* Implement level 3
 
 ### 3. What tasks are blocked waiting on another team member?
 * Waiting on observer pattern to be updated so we can move to next level once all enemies are destroyed
