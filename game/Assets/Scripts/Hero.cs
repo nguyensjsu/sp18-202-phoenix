@@ -97,7 +97,6 @@ public class Hero : MonoBehaviour {
 		}
 	}
 
-	// TODO: Fix player rotation when colliding with object
 	void OnTriggerEnter2D(Collider2D coll) {
         if (coll.gameObject.CompareTag("Item"))
         {
