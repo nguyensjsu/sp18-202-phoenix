@@ -5,8 +5,10 @@ using UnityEngine;
 public class RedTurtle : MonoBehaviour, IMonster
 {
 
-    private int health = 1;
-    private int speed = 1;
+    public static float DEFAULT_SPEED = 1;
+
+    private int health = 5;
+    private float speed = DEFAULT_SPEED;
     private int step = 0;
     private MovePattern m;
     public List<MonoBehaviour> observers = new List<MonoBehaviour>();
@@ -26,6 +28,7 @@ public class RedTurtle : MonoBehaviour, IMonster
     void Update()
     {
         Move();
+        ObserveHP();
     }
 
     public int Health
@@ -40,7 +43,7 @@ public class RedTurtle : MonoBehaviour, IMonster
         }
     }
 
-    public int Speed
+    public float Speed
     {
         get
         {
@@ -48,7 +51,10 @@ public class RedTurtle : MonoBehaviour, IMonster
         }
         set
         {
-            this.speed = value;
+            if (value == DEFAULT_SPEED / 2 || value == DEFAULT_SPEED)
+            {
+                this.speed = value;
+            }
         }
     }
 
@@ -73,6 +79,14 @@ public class RedTurtle : MonoBehaviour, IMonster
         else
         {
             m.Move(this);
+        }
+    }
+
+    public void ObserveHP()
+    {
+        if (this.Health == 0)
+        {
+            Destroy(this.gameObject);
         }
     }
 
