@@ -166,6 +166,7 @@
 	* Implemented Strategy pattern when spawning different type of monsters with different health and move speed based on the difficulty level selected from the menu
 	* Worked on level 3 scripts
 	* worked with enemy routes for different levels
+	* work on Damage recieved by the monsters
 	
 * Watcharit Maharutainont
 
