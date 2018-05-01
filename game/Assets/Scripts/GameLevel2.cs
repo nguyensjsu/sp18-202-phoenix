@@ -17,8 +17,8 @@ public class GameLevel2 : GameSystem, IGameSystem {
 	}
 
 	void Update () {
-		observePauseButton ();
-		observeMonsters ();
+		ObservePauseButton ();
+		ObserveMonsters ();
 	}
 
 	public override void Initialize(){
@@ -60,6 +60,12 @@ public class GameLevel2 : GameSystem, IGameSystem {
 	public bool IsOver {
 		get {
 			return isOver;
+		}
+	}
+
+	public ArrayList MonsterList {
+		get {
+			return monsters;
 		}
 	}
 

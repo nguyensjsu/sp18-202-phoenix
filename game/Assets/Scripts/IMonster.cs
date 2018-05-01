@@ -5,7 +5,7 @@ using UnityEngine;
 public interface IMonster {
 
 	int Health { get; set; }
-	int Speed { get; set; }
+	float Speed { get; set; }
 	int Step { get; set; }
 
 	void Move();

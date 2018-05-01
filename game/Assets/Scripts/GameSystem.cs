@@ -37,13 +37,13 @@ public abstract class GameSystem : MonoBehaviour {
 		numberOfMonsters = -1;
 	}
 
-	public void observePauseButton() {
+	public void ObservePauseButton() {
 		if (Input.GetButtonDown ("Cancel")) {
 			ToggleGamePause ();
 		}
 	}
 
-	public void observeMonsters() {
+	public void ObserveMonsters() {
 		if (numberOfMonsters - numberOfMonstersDestroyed == 0 && !isPaused) {
 			isOver = true;
 			ToggleGamePause ();
@@ -51,7 +51,7 @@ public abstract class GameSystem : MonoBehaviour {
 		}
 	}
 
-	public void decreaseNumberOfMonsters() {
+	public void DecreaseNumberOfMonsters() {
 		numberOfMonstersDestroyed++;
 	}
 

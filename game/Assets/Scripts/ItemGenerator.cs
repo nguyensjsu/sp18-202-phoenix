@@ -31,6 +31,7 @@ public class ItemGenerator : MonoBehaviour
 	}
 
 	private Items randomizeItem() {
+		return Items.pow;
 		float value = UnityEngine.Random.value;
 		if (value > 0.40f) {
 			return Items.bomb;
