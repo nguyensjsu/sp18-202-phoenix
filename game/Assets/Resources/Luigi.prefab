@@ -27,7 +27,7 @@ GameObject:
   - component: {fileID: 61929459463183230}
   m_Layer: 0
   m_Name: Luigi
-  m_TagString: enemy
+  m_TagString: boss
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

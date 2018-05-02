@@ -8,7 +8,7 @@ public class FinishBehaviour : MonoBehaviour
 {
 
     public Text youLose;
-	private readonly int WAIT_TIME = 3;
+	private static readonly int WAIT_TIME = 3;
 
     public void OnTriggerEnter2D(Collider2D collision)
     {
@@ -16,11 +16,11 @@ public class FinishBehaviour : MonoBehaviour
         {
             BlueTurtle bt = gameObject.GetComponent<BlueTurtle>();
             bt.SendMessage("NotifyAll");
-			StartCoroutine(delay());
+			StartCoroutine(lose());
         }
     }
 
-	private IEnumerator delay()
+	private IEnumerator lose()
 	{
 		youLose.text = "You Lose";
 		yield return new WaitForSeconds(WAIT_TIME);
