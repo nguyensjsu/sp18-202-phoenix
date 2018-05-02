@@ -6,6 +6,7 @@ public interface IMonster {
 
 	float Speed { get; set; }
 	int Step { get; set; }
+	int Route { get; set; }
 
 	void Move();
     void TakeDamage();

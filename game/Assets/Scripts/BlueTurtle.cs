@@ -16,6 +16,7 @@ public class BlueTurtle : MonoBehaviour, IMonster {
     private IHealth iHealth;
     private float speed = DEFAULT_SPEED;
 	private int step = 0;
+	public int route = 0;
 	private MovePattern m;
     public List<MonoBehaviour> observers = new List<MonoBehaviour>();
     
@@ -27,6 +28,9 @@ public class BlueTurtle : MonoBehaviour, IMonster {
     // Use this for initialization
     void Start () {
         HandleDifficultyType();
+		GameObject go = GameObject.FindGameObjectWithTag("GameController");
+		GameSystem gs = go.GetComponent<GameSystem>();
+		gs.SetRoute(this.gameObject);
     }
 
 	// Update is called once per frame
@@ -82,6 +86,15 @@ public class BlueTurtle : MonoBehaviour, IMonster {
 		}
 		set {
 			this.step = value;
+		}
+	}
+
+	public int Route {
+		get {
+			return route;
+		}
+		set {
+			this.route = value;
 		}
 	}
 

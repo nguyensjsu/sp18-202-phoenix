@@ -10,6 +10,7 @@ public abstract class GameSystem : MonoBehaviour {
 
 	public Text winner;
 
+	public List<Vector3> startingCoordinates;
 	public ArrayList monsters;
 	public int numberOfMonsters;
 	public int numberOfMonstersDestroyed;
@@ -17,22 +18,28 @@ public abstract class GameSystem : MonoBehaviour {
 	public bool isOver;
 	public Timer timer;
 
+
+	public List<MonsterFactory> mfs;
+	public ItemGenerator ig;
+
 	// Use this for initialization
 	void Start () {
 
 	}
-	
+
 	// Update is called once per frame
 	void Update () {
-		
+
 	}
-		
+
 	public void Run(){
 		Initialize();
 		Play ();
 	}
 
 	public void Init() {
+		startingCoordinates = new List<Vector3>();
+		mfs = new List<MonsterFactory>();
 		monsters = new ArrayList();
 		numberOfMonsters = -1;
 	}
@@ -52,8 +59,21 @@ public abstract class GameSystem : MonoBehaviour {
 	}
 
 	public void DecreaseNumberOfMonsters() {
-        Debug.Log("In DecreaseNumberOfMonsters");
 		numberOfMonstersDestroyed++;
+	}
+
+	public void SetUp() {
+		for (int i = 0; i < startingCoordinates.Count; i++) {
+			mfs.Add(new MonsterFactory (startingCoordinates[i]));
+		}
+	}
+
+	public void SetRoute(GameObject monster) {
+		for (int route = 0; route < startingCoordinates.Count; route++) {
+			if (monster.transform.position == startingCoordinates [route]) {
+				monster.GetComponent<IMonster> ().Route = route;
+			}
+		}
 	}
 
 	private void ToggleGamePause() {
