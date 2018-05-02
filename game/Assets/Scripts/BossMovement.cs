@@ -23,8 +23,6 @@ public class BossMovement : MonoBehaviour {
 	}
 
 	void Move(Vector3 playerPosition) {
-		Debug.Log(transform.rotation.eulerAngles.y);
-
 		if (playerPosition.x < transform.position.x && transform.rotation.eulerAngles.y != 180f) {
 			transform.RotateAround(transform.position, transform.up, 180f);
 		} else if (playerPosition.x > transform.position.x && transform.rotation.eulerAngles.y != 0f) {
