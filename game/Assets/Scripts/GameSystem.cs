@@ -52,6 +52,7 @@ public abstract class GameSystem : MonoBehaviour {
 	}
 
 	public void DecreaseNumberOfMonsters() {
+        Debug.Log("In DecreaseNumberOfMonsters");
 		numberOfMonstersDestroyed++;
 	}
 

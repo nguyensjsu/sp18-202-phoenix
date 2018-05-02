@@ -229,6 +229,58 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &510595927
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4995280045811858, guid: dd4ed1991f6324a5f8d39d2b025bce7f, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -8.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 4995280045811858, guid: dd4ed1991f6324a5f8d39d2b025bce7f, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0.38
+      objectReference: {fileID: 0}
+    - target: {fileID: 4995280045811858, guid: dd4ed1991f6324a5f8d39d2b025bce7f, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4995280045811858, guid: dd4ed1991f6324a5f8d39d2b025bce7f, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4995280045811858, guid: dd4ed1991f6324a5f8d39d2b025bce7f, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4995280045811858, guid: dd4ed1991f6324a5f8d39d2b025bce7f, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4995280045811858, guid: dd4ed1991f6324a5f8d39d2b025bce7f, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4995280045811858, guid: dd4ed1991f6324a5f8d39d2b025bce7f, type: 2}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 114233722892776448, guid: dd4ed1991f6324a5f8d39d2b025bce7f,
+        type: 2}
+      propertyPath: youLose
+      value: 
+      objectReference: {fileID: 586603180}
+    - target: {fileID: 114292233281389914, guid: dd4ed1991f6324a5f8d39d2b025bce7f,
+        type: 2}
+      propertyPath: youLose
+      value: 
+      objectReference: {fileID: 586603180}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: dd4ed1991f6324a5f8d39d2b025bce7f, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &586603178
 GameObject:
   m_ObjectHideFlags: 0

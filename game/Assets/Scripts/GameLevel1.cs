@@ -37,17 +37,26 @@ public class GameLevel1 : GameSystem, IGameSystem {
 	// how the enemies will be spawned, use enum "Monsters" to select the enemy you want to spawn
 	public IEnumerator Spawn() {
 		monsters.Add(mf.getMonster(Monsters.bt));
-		yield return new WaitForSeconds(2);
-		monsters.Add(mf.getMonster(Monsters.bt));
-		yield return new WaitForSeconds(2);
-		monsters.Add(mf.getMonster(Monsters.bt));
-		yield return new WaitForSeconds(8);
-		monsters.Add(mf.getMonster(Monsters.bt));
-		yield return new WaitForSeconds(2);
-		monsters.Add(mf.getMonster(Monsters.bt));
-		yield return new WaitForSeconds(2);
-		monsters.Add(mf.getMonster(Monsters.bt));
+        numberOfMonsters = monsters.Count;
+        yield return new WaitForSeconds(2);
 
+		monsters.Add(mf.getMonster(Monsters.bt));
+        numberOfMonsters = monsters.Count;
+        yield return new WaitForSeconds(2);
+
+		monsters.Add(mf.getMonster(Monsters.bt));
+        numberOfMonsters = monsters.Count;
+        yield return new WaitForSeconds(8);
+
+		monsters.Add(mf.getMonster(Monsters.bt));
+        numberOfMonsters = monsters.Count;
+        yield return new WaitForSeconds(2);
+
+		monsters.Add(mf.getMonster(Monsters.bt));
+        numberOfMonsters = monsters.Count;
+        yield return new WaitForSeconds(2);
+
+		monsters.Add(mf.getMonster(Monsters.bt));
 		numberOfMonsters = monsters.Count;
 	}
 
