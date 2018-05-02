@@ -7,22 +7,22 @@ public class PlayerInteract : MonoBehaviour {
     public GameObject current = null;
     public InteractionObject currentScript = null;
     public Inventory inventory;
-    public GameObject bt;
     int bt_id = 0;
-    int bt_clone_id;
+    int bt_clone_id = -1;
     public GameObject bt_clone;
     public BlueTurtle bt_script;
 
     private void Awake()
     {
-        bt = GameObject.FindGameObjectWithTag("enemy");
-        bt_id = bt.GetInstanceID();
-        bt_script = bt.GetComponent<BlueTurtle>();
-        bt_script.SendMessage("AddObserver", this);        
+        
     }
     public void Update()
     {
-        bt_clone = GameObject.FindGameObjectWithTag("enemy");
+        try
+        {
+            bt_clone = GameObject.FindGameObjectWithTag("enemy");
+        }
+        catch { }
         bt_clone_id = bt_clone.GetInstanceID();
         if (bt_id != bt_clone_id)
         {

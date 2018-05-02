@@ -5,15 +5,9 @@ using UnityEngine;
 public class Pow : MonoBehaviour, IItem {
 
 	private bool isActivated;
+    // Use this for initialization
+    void Start () {
 
-	// Use this for initialization
-	void Start () {
-
-	}
-
-	// Update is called once per frame
-	void Update () {
-		
 	}
 
 	IEnumerator Activated () {
@@ -37,4 +31,5 @@ public class Pow : MonoBehaviour, IItem {
 			return 5f;
 		}
 	}
+    
 }

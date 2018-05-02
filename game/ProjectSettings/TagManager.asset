@@ -9,6 +9,7 @@ TagManager:
   - iterObj
   - fireball
   - boss
+  - MainCanvas
   layers:
   - Default
   - TransparentFX

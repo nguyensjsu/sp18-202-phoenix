@@ -8,7 +8,16 @@ public class FinishBehaviour : MonoBehaviour
 {
 
     public Text youLose;
-	private static readonly int WAIT_TIME = 3;
+    GameObject canvasObj;
+    Transform textTr;
+    private static readonly int WAIT_TIME = 3;
+
+    private void Awake()
+    {
+        canvasObj = GameObject.FindGameObjectWithTag("MainCanvas");
+        textTr = canvasObj.transform.Find("Lose Text");
+        youLose = textTr.GetComponent<Text>();
+    }
 
     public void OnTriggerEnter2D(Collider2D collision)
     {
@@ -23,6 +32,7 @@ public class FinishBehaviour : MonoBehaviour
 	private IEnumerator lose()
 	{
 		youLose.text = "You Lose";
+        Time.timeScale = 0;
 		yield return new WaitForSeconds(WAIT_TIME);
 		SceneManager.LoadScene(0);
 	}
