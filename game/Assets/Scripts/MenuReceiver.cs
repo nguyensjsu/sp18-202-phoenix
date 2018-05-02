@@ -7,6 +7,7 @@ public class MenuReceiver : Receiver {
 	private GameObject menuPanel;
 	private GameObject difficultyPanel;
 	private GameObject aboutPanel;
+    public DifficultyLevel difficultyLevel = DifficultyLevel.NewDifficultyLevelInstance();
 
 	public void setPanels(GameObject m, GameObject d, GameObject a) {
 		menuPanel = m;
@@ -36,11 +37,11 @@ public class MenuReceiver : Receiver {
 			break;
 
 		case "Easy Difficulty":
-			// TODO: Establish and implement easy strategy
-			break;
+                difficultyLevel.setDifficulty(DifficultyType.EasyMode);
+                break;
 		case "Hard Difficulty":
-			// TODO: Establish and implement hard strategy
-			break;
+                difficultyLevel.setDifficulty(DifficultyType.HardMode);
+                break;
 		case "Display Menu":
 			if (difficultyPanel.activeSelf) {
 				difficultyPanel.SetActive(false);
