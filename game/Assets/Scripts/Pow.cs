@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Pow : MonoBehaviour, IItem {
 
+	private bool isActivated;
+
 	// Use this for initialization
 	void Start () {
 
@@ -21,11 +23,12 @@ public class Pow : MonoBehaviour, IItem {
 	}
 
 	void OnTriggerEnter2D(Collider2D coll) {
-		if (coll.gameObject.CompareTag("Player"))
+		if (coll.gameObject.CompareTag("Player") && !isActivated)
 		{
 			Vector3 vector = new Vector3 (this.transform.position.x, this.transform.position.y, 0f);
 			Instantiate(Resources.Load("pow_activated"), vector, Quaternion.identity);
 			StartCoroutine (Activated ());
+			isActivated = true;
 		}
 	}
 
