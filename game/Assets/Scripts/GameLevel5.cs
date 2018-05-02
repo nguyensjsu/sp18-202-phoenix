@@ -42,6 +42,9 @@ public class GameLevel5 : GameSystem, IGameSystem {
 		yield return new WaitForSeconds(2);
 		monsters.Add(mfs[2].getMonster(Monsters.bt));
 		yield return new WaitForSeconds(2);
+		monsters.Add(mfs[1].getMonster(Monsters.Mario));
+		yield return new WaitForSeconds(2);
+		monsters.Add(mfs[0].getMonster(Monsters.Luigi));
 		numberOfMonsters = monsters.Count;
 	}
 

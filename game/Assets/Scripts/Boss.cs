@@ -2,37 +2,61 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BossMovement : MonoBehaviour {
+public class Boss : MonoBehaviour, IMonster {
 
+	public static float DEFAULT_SPEED = 1;
 	private Animator animator;
 	private GameObject player;
-	private float moveSpeed;
+	private Vector3 playerPosition;
+	private float speed;
+	private int step = 0;
+	private int route = 0;
 	private bool win;
 
 	void Awake() {
 		animator = GetComponent<Animator>();
 		player = GameObject.FindGameObjectWithTag("Player");
-		moveSpeed = 1;
+		speed = DEFAULT_SPEED;
 		win = false;
 	}
 
 	void Update () {
 		if (!win) {
-			Move(player.transform.position);
+			playerPosition = player.transform.position;
+			Move();
 		}
 	}
 
-	void Move(Vector3 playerPosition) {
+	public float Speed { 
+		get { return speed; }
+		set { this.speed = value; }
+	}
+
+	public int Step {
+		get { return step; }
+		set { this.step = value; }
+	}
+
+	public int Route {
+		get { return route; }
+		set { this.route = value; }
+	}
+
+	public void Move() {
+		//Vector3 playerPosition = player.transform.position;
 		if (playerPosition.x < transform.position.x && transform.rotation.eulerAngles.y != 180f) {
 			transform.RotateAround(transform.position, transform.up, 180f);
 		} else if (playerPosition.x > transform.position.x && transform.rotation.eulerAngles.y != 0f) {
 			transform.RotateAround(transform.position, transform.up, 180f);
 		}
 
-		transform.position = Vector2.MoveTowards(transform.position, playerPosition, moveSpeed * Time.deltaTime);
+		transform.position = Vector2.MoveTowards(transform.position, playerPosition, speed * Time.deltaTime);
 	}
 
-	// TODO: Have bowser jr. sprite show that he dies by getting on the ground
+	public void TakeDamage() {
+
+	}
+
 	// TODO: Have all bosses show their celebration when player loses
 	void OnTriggerEnter2D(Collider2D coll) {
 		if (coll.gameObject.CompareTag("fireball")) {

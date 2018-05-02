@@ -18,7 +18,9 @@ public class MonsterFactory : MonoBehaviour
 
 public enum Monsters {
 	bt,
-    rt
+    rt,
+	Mario,
+	Luigi
 };
 
 
