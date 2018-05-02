@@ -35,7 +35,10 @@ public class BossMovement : MonoBehaviour {
 	// TODO: Have bowser jr. sprite show that he dies by getting on the ground
 	// TODO: Have all bosses show their celebration when player loses
 	void OnTriggerEnter2D(Collider2D coll) {
-		if (coll.gameObject.CompareTag("Player")) {
+		if (coll.gameObject.CompareTag("fireball")) {
+			gameObject.SetActive(false);
+
+		} else if (coll.gameObject.CompareTag("Player")) {
 			win = true;
 			animator.Play("boss_win");
 		} else if (coll.gameObject.CompareTag("fireball")) {
