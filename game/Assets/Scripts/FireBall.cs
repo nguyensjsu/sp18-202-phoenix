@@ -25,7 +25,6 @@ public class FireBall : MonoBehaviour {
 			string direction = ((Hero)playerObject.GetComponent<Hero>()).getDirection();
 			nextFire = Time.time + fireRate;
 
-			// TODO: Add code to damage enemy
 			if (direction.Equals("up")) {
 				shoot(position, Vector3.up, rotation);
 			} else if (direction.Equals("down")) {
