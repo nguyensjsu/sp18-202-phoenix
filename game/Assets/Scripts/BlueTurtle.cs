@@ -2,12 +2,19 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+public enum DifficultyType
+{
+    EasyMode,
+    HardMode
+}
+
 public class BlueTurtle : MonoBehaviour, IMonster {
 
 	public static float DEFAULT_SPEED = 1;
 
-	private int health = 5;
-	private float speed = DEFAULT_SPEED;
+    public DifficultyType difficultyType;
+    private IHealth iHealth;
+    private float speed = DEFAULT_SPEED;
 	private int step = 0;
 	private MovePattern m;
     public List<MonoBehaviour> observers = new List<MonoBehaviour>();
@@ -19,8 +26,8 @@ public class BlueTurtle : MonoBehaviour, IMonster {
     }
     // Use this for initialization
     void Start () {
-		
-	}
+        HandleDifficultyType();
+    }
 
 	// Update is called once per frame
 	void Update () {
@@ -28,16 +35,37 @@ public class BlueTurtle : MonoBehaviour, IMonster {
 		ObserveHP ();
 	}
 
-	public int Health {
-		get {
-			return health;
-		}
-		set {
-			this.health = value;
-		}
-	}
+    private void HandleDifficultyType()
+    {
 
-	public float Speed {
+        //To prevent Unity from creating multiple copies of the same component in inspector at runtime
+        Component c = gameObject.GetComponent<IHealth>() as Component;
+
+        if (c != null)
+        {
+            Destroy(c);
+        }
+
+        #region Strategy
+        switch (difficultyType)
+        {
+
+            case DifficultyType.EasyMode:
+                iHealth = gameObject.AddComponent<EasyMode>();
+                break;
+
+            case DifficultyType.HardMode:
+                iHealth = gameObject.AddComponent<HardMode>();
+                break;
+
+            default:
+                iHealth = gameObject.AddComponent<EasyMode>();
+                break;
+        }
+        #endregion
+    }
+
+    public float Speed {
 		get {
 			return speed;
 		}
@@ -66,14 +94,14 @@ public class BlueTurtle : MonoBehaviour, IMonster {
 	}
 
 	public void ObserveHP() {
-		if (this.Health == 0) {
+		if (iHealth.Health == 0) {
 			Destroy (this.gameObject);
 		}
 	}
 
-    public void Attack()
+    public void TakeDamage()
     {
-
+        iHealth.TakeDamage();
     }
 
     public void NotifyAll()

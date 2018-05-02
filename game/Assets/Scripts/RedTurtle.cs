@@ -7,7 +7,8 @@ public class RedTurtle : MonoBehaviour, IMonster
 
     public static float DEFAULT_SPEED = 1;
 
-    private int health = 5;
+    public DifficultyType difficultyType;
+    private IHealth iHealth;
     private float speed = DEFAULT_SPEED;
     private int step = 0;
     private MovePattern m;
@@ -21,7 +22,7 @@ public class RedTurtle : MonoBehaviour, IMonster
     // Use this for initialization
     void Start()
     {
-
+        HandleDifficultyType();
     }
 
     // Update is called once per frame
@@ -31,16 +32,34 @@ public class RedTurtle : MonoBehaviour, IMonster
         ObserveHP();
     }
 
-    public int Health
+    private void HandleDifficultyType()
     {
-        get
+
+        //To prevent Unity from creating multiple copies of the same component in inspector at runtime
+        Component c = gameObject.GetComponent<IHealth>() as Component;
+
+        if (c != null)
         {
-            return health;
+            Destroy(c);
         }
-        set
+
+        #region Strategy
+        switch (difficultyType)
         {
-            this.health = value;
+
+            case DifficultyType.EasyMode:
+                iHealth = gameObject.AddComponent<EasyMode>();
+                break;
+
+            case DifficultyType.HardMode:
+                iHealth = gameObject.AddComponent<HardMode>();
+                break;
+
+            default:
+                iHealth = gameObject.AddComponent<EasyMode>();
+                break;
         }
+        #endregion
     }
 
     public float Speed
@@ -84,15 +103,15 @@ public class RedTurtle : MonoBehaviour, IMonster
 
     public void ObserveHP()
     {
-        if (this.Health == 0)
+        if (iHealth.Health == 0)
         {
             Destroy(this.gameObject);
         }
     }
 
-    public void Attack()
+    public void TakeDamage()
     {
-
+        iHealth.TakeDamage();
     }
 
     public void NotifyAll()

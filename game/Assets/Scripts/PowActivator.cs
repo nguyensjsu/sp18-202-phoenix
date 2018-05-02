@@ -33,7 +33,7 @@ public class PowActivator : MonoBehaviour {
 		IGameSystem gs = go.GetComponent<IGameSystem> ();
 		ArrayList monsters = gs.MonsterList;
 		foreach (IMonster monster in monsters) {
-			monster.Health -= 1;
+			monster.TakeDamage();
 			monster.Speed /= 2;
 		}
 

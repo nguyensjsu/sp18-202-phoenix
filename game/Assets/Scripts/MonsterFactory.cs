@@ -17,7 +17,8 @@ public class MonsterFactory : MonoBehaviour
 }
 
 public enum Monsters {
-	bt
+	bt,
+    rt
 };
 
 
