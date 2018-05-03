@@ -27,7 +27,13 @@ public abstract class Boss : MonoBehaviour, IMonster {
 
 	public abstract void Move();
 
-	public void TakeDamage() {
+    public void ObserveHP()
+    {
+
+    }
+
+
+    public void TakeDamage() {
 
 	}
 }

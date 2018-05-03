@@ -21,7 +21,6 @@ GameObject:
   - component: {fileID: 4325478095249970}
   - component: {fileID: 212723814460704724}
   - component: {fileID: 95548863241813564}
-  - component: {fileID: 114229471440722250}
   - component: {fileID: 114914765784699526}
   - component: {fileID: 61375602068052802}
   - component: {fileID: 50021194550013230}
@@ -117,7 +116,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1830690941139394}
   m_Enabled: 0
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 733f764f99adae545b7634bcd3fcf76e, type: 3}
+  m_Script: {fileID: 11500000, guid: 8161c6a5f719c4ca1b8be0c4963e8789, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   waypoints: []

@@ -45,7 +45,9 @@ public class InteractionObject : MonoBehaviour {
         {
             if (collision.CompareTag("enemy"))
             {
-                collision.GetComponent<BlueTurtle>().SendMessage("TakeDamage");
+                IMonster monster = collision.gameObject.GetComponent<IMonster>();
+                monster.TakeDamage();
+                monster.ObserveHP();
                 Destroy(gameObject);
             }
         }

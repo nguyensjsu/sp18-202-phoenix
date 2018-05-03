@@ -9,5 +9,6 @@ public interface IMonster {
 	int Route { get; set; }
 
 	void Move();
+    void ObserveHP();
     void TakeDamage();
 }
