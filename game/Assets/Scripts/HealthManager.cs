@@ -13,7 +13,7 @@ public interface IHealth
 }
 public class EasyMode : MonoBehaviour, IHealth
 {
-    private int health = 6;
+    private int health = 10;
 
     public int Health
     {
@@ -29,7 +29,7 @@ public class EasyMode : MonoBehaviour, IHealth
 
     public void TakeDamage()
     {
-        this.Health -= 2;
+        this.Health -= 5;
     }
 }
 public class HardMode : MonoBehaviour, IHealth
@@ -50,6 +50,6 @@ public class HardMode : MonoBehaviour, IHealth
 
     public void TakeDamage()
     {
-        this.Health -= 1;
+        this.Health -= 2;
     }
 }
