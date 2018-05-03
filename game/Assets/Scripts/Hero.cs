@@ -131,4 +131,5 @@ public class Hero : MonoBehaviour {
 		yield return new WaitForSeconds(WAIT_TIME);
 		SceneManager.LoadScene(0);
 	}
+
 }

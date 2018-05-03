@@ -45,10 +45,4 @@ public class PowActivator : MonoBehaviour {
 		Destroy (this.gameObject);
 	}
 
-	public float TTL {
-		get {
-			return 5f;
-		}
-	}
-
 }

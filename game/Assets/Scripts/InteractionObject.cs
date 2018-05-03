@@ -30,13 +30,13 @@ public class InteractionObject : MonoBehaviour {
 
     public void DoAction()
     {
-        gameObject.GetComponent<Renderer>().enabled = false;
+        //gameObject.GetComponent<Renderer>().enabled = false;
     }
 
 	public void DoAnotherAction(Vector3 position)
     {
-		gameObject.transform.position = position;
-        gameObject.GetComponent<Renderer>().enabled = true;
+		//gameObject.transform.position = position;
+        //gameObject.GetComponent<Renderer>().enabled = true;
     }
 
     public void OnTriggerEnter2D(Collider2D collision)
@@ -47,8 +47,6 @@ public class InteractionObject : MonoBehaviour {
             {
                 IMonster monster = collision.gameObject.GetComponent<IMonster>();
                 monster.TakeDamage();
-                monster.ObserveHP();
-                Destroy(gameObject);
             }
         }
     }

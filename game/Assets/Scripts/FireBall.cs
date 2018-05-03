@@ -20,20 +20,32 @@ public class FireBall : MonoBehaviour {
 
 	void Update () {
 		if (Input.GetButtonDown("Fire1") && Time.time > nextFire) {
-			Vector3 position = player.position;
-			Quaternion rotation = player.rotation;
-			string direction = ((Hero)playerObject.GetComponent<Hero>()).getDirection();
-			nextFire = Time.time + fireRate;
+            PlayerInteract pi = playerObject.GetComponent<PlayerInteract>();
+            if (pi.numberOfFireBalls > 0)
+            {
+                pi.numberOfFireBalls--;
+                Vector3 position = player.position;
+                Quaternion rotation = player.rotation;
+                string direction = ((Hero)playerObject.GetComponent<Hero>()).getDirection();
+                nextFire = Time.time + fireRate;
 
-			if (direction.Equals("up")) {
-				shoot(position, Vector3.up, rotation);
-			} else if (direction.Equals("down")) {
-				shoot(position, Vector3.down, rotation);
-			} else if (direction.Equals("left")) {
-				shoot(position, Vector3.left, rotation);
-			} else if (direction.Equals("right")) {
-				shoot(position, Vector3.right, rotation);
-			}
+                if (direction.Equals("up"))
+                {
+                    shoot(position, Vector3.up, rotation);
+                }
+                else if (direction.Equals("down"))
+                {
+                    shoot(position, Vector3.down, rotation);
+                }
+                else if (direction.Equals("left"))
+                {
+                    shoot(position, Vector3.left, rotation);
+                }
+                else if (direction.Equals("right"))
+                {
+                    shoot(position, Vector3.right, rotation);
+                }
+            }
 		}
 	}
 

@@ -12,6 +12,9 @@ public class PlayerInteract : MonoBehaviour {
     public GameObject bt_clone;
     public MonoBehaviour bt_script;
 
+    public int numberOfBombs = 0;
+    public int numberOfFireBalls = 0;
+
     private void Awake()
     {
         inventory = GameObject.FindGameObjectWithTag("Player").GetComponent<Inventory>();
@@ -35,19 +38,24 @@ public class PlayerInteract : MonoBehaviour {
 
         if (Input.GetButtonDown("interact") && current)
         {
-            if (currentScript.inventoried)
+            string item = current.name;
+            if (item.Contains("bomb"))
             {
-                inventory.Additem(current);
+                numberOfBombs += 1;
             }
+            else if (item.Contains("fire"))
+            {
+                numberOfFireBalls += 3;
+            }
+            Destroy(current.gameObject);
         }
         try
         {
             if (Input.GetButtonDown("UseBomb"))
             {
-                GameObject bomb = inventory.FindItem("Bomb");
-                if (bomb != null)
+                if (numberOfBombs > 0)
                 {
-                    inventory.RemoveItem(bomb);
+                    numberOfBombs--;
 					GameObject playerObject = GameObject.FindGameObjectWithTag("Player");
 					Vector3 pos = playerObject.transform.position;
 
@@ -67,9 +75,9 @@ public class PlayerInteract : MonoBehaviour {
 						pos += Vector3.right;
 						break;
 					}
+                    pos.z = -1;
+                    Instantiate(Resources.Load("bomb_activated"), pos, Quaternion.identity);
 
-                    currentScript = bomb.GetComponent<InteractionObject>();
-					currentScript.DoAnotherAction(pos);
                 }
             }
         }
@@ -84,7 +92,7 @@ public class PlayerInteract : MonoBehaviour {
         if (other.CompareTag("iterObj"))
         {
             current = other.gameObject;
-            currentScript = current.GetComponent<InteractionObject>();
+            //currentScript = current.GetComponent<InteractionObject>();
         }
     }
 
@@ -95,7 +103,7 @@ public class PlayerInteract : MonoBehaviour {
             if (other.gameObject == current)
             {
                 current = null;
-                currentScript = null;
+                //currentScript = null;
             }
         }
     }
