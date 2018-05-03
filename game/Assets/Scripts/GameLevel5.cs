@@ -41,10 +41,30 @@ public class GameLevel5 : GameSystem, IGameSystem {
 		monsters.Add(mfs[1].getMonster(Monsters.bt));
 		yield return new WaitForSeconds(2);
 		monsters.Add(mfs[2].getMonster(Monsters.bt));
+		yield return new WaitForSeconds(5);
+		// red turtles
+		monsters.Add(mfs[0].getMonster(Monsters.rt));
 		yield return new WaitForSeconds(2);
+		monsters.Add(mfs[1].getMonster(Monsters.rt));
+		yield return new WaitForSeconds(2);
+		monsters.Add(mfs[2].getMonster(Monsters.rt));
+		yield return new WaitForSeconds(2);
+		// add goombas
+		monsters.Add(mfs[0].getMonster(Monsters.goomba));
+		yield return new WaitForSeconds(2);
+		monsters.Add(mfs[1].getMonster(Monsters.goomba));
+		yield return new WaitForSeconds(2);
+		monsters.Add(mfs[2].getMonster(Monsters.goomba));
+		yield return new WaitForSeconds(5);
+		// bosses
 		monsters.Add(mfs[1].getMonster(Monsters.Mario));
 		yield return new WaitForSeconds(2);
 		monsters.Add(mfs[0].getMonster(Monsters.Luigi));
+		yield return new WaitForSeconds(5);
+		monsters.Add(mfs[2].getMonster(Monsters.bt));
+		monsters.Add(mfs[1].getMonster(Monsters.rt));
+		monsters.Add(mfs[1].getMonster(Monsters.goomba));
+
 		numberOfMonsters = monsters.Count;
 	}
 
