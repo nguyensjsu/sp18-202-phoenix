@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
+
 public class RedTurtle : MonoBehaviour, IMonster
 {
 
@@ -11,22 +13,23 @@ public class RedTurtle : MonoBehaviour, IMonster
     private IHealth iHealth;
     private float speed = DEFAULT_SPEED;
     private int step = 0;
-	private int route = 0;
+    public int route = 0;
     private MovePattern m;
     public List<MonoBehaviour> observers = new List<MonoBehaviour>();
 
     public void AddObserver(MonoBehaviour observer)
     {
-        Debug.Log("In AddObserver");
         observers.Add(observer);
     }
     // Use this for initialization
     void Start()
     {
+        DifficultyLevel diff = DifficultyLevel.GetDifficultyLevelInstance();
+        difficultyType = diff == null ? DifficultyType.EasyMode : diff.getDifficulty();
         HandleDifficultyType();
-		GameObject go = GameObject.FindGameObjectWithTag("GameController");
-		GameSystem gs = go.GetComponent<GameSystem>();
-		gs.SetRoute(this.gameObject);
+        GameObject go = GameObject.FindGameObjectWithTag("GameController");
+        GameSystem gs = go.GetComponent<GameSystem>();
+        gs.SetRoute(this.gameObject);
     }
 
     // Update is called once per frame
@@ -93,14 +96,17 @@ public class RedTurtle : MonoBehaviour, IMonster
         }
     }
 
-	public int Route {
-		get {
-			return route;
-		}
-		set {
-			this.route = value;
-		}
-	}
+    public int Route
+    {
+        get
+        {
+            return route;
+        }
+        set
+        {
+            this.route = value;
+        }
+    }
 
     public void Move()
     {
@@ -116,7 +122,7 @@ public class RedTurtle : MonoBehaviour, IMonster
 
     public void ObserveHP()
     {
-        if (iHealth.Health == 0)
+        if (iHealth.Health <= 0)
         {
             Destroy(this.gameObject);
         }
@@ -125,14 +131,25 @@ public class RedTurtle : MonoBehaviour, IMonster
     public void TakeDamage()
     {
         iHealth.TakeDamage();
+        Debug.Log("Current Health : " + iHealth.Health);
     }
 
     public void NotifyAll()
     {
-        Debug.Log("In NotifyAll");
         foreach (MonoBehaviour observer in observers)
         {
             observer.SendMessage("UpdateState");
         }
+    }
+
+    private void OnDestroy()
+    {
+        try
+        {
+            GameObject.FindGameObjectWithTag("GameController").GetComponent<GameSystem>().SendMessage("DecreaseNumberOfMonsters");
+        }
+        catch
+        { }
+
     }
 }

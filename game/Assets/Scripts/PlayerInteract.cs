@@ -10,7 +10,7 @@ public class PlayerInteract : MonoBehaviour {
     int bt_id = 0;
     int bt_clone_id = -1;
     public GameObject bt_clone;
-    public BlueTurtle bt_script;
+    public MonoBehaviour bt_script;
 
     private void Awake()
     {
@@ -26,7 +26,8 @@ public class PlayerInteract : MonoBehaviour {
         catch { }
         if (bt_id != bt_clone_id)
         {
-            bt_script = bt_clone.GetComponent<BlueTurtle>();
+            //if(bt_clone is BlueTurtle)
+                bt_script = bt_clone.GetComponent<BlueTurtle>();
             bt_script.SendMessage("AddObserver", this);
             bt_id = bt_clone_id;
         }

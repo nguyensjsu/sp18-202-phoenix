@@ -21,7 +21,7 @@ public class GameLevel2 : GameSystem, IGameSystem {
 	public override void Initialize(){
 		Init ();
 		startingCoordinates.Add (new Vector3 (-11.5f, 0.4f, 1));	// starting coordinate for enemies
-//		startingCoordinates.Add (new Vector3 (x, y, 1));			// you can add more starting coordinate based on the routes on your map
+        startingCoordinates.Add (new Vector3 (-11.6f, 0.4f, 1));			// you can add more starting coordinate based on the routes on your map
 //		startingCoordinates.Add (new Vector3 (x, y, 1));			// monster factory will be generated based on the number of starting coordinates
 		MovePattern.setInstance(LEVEL);
 		ig = new ItemGenerator (0.8f); // items spawn rate

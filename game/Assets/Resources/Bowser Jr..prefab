@@ -26,9 +26,9 @@ GameObject:
   - component: {fileID: 114102141515176530}
   - component: {fileID: 114639112969245842}
   - component: {fileID: 114000243162925162}
-  - component: {fileID: 114369010110573920}
   - component: {fileID: 114532151861266716}
   - component: {fileID: 114901589718724150}
+  - component: {fileID: 114630541299517028}
   m_Layer: 0
   m_Name: Bowser Jr.
   m_TagString: Player
@@ -111,6 +111,7 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!114 &114000243162925162
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -124,8 +125,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   current: {fileID: 0}
   currentScript: {fileID: 0}
-  inventory: {fileID: 114369010110573920}
-  bt: {fileID: 0}
+  inventory: {fileID: 114630541299517028}
+  bt_clone: {fileID: 0}
   bt_script: {fileID: 0}
 --- !u!114 &114102141515176530
 MonoBehaviour:
@@ -139,28 +140,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerText: {fileID: 0}
---- !u!114 &114369010110573920
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1672199905514390}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 35425b4e56b8944c29eecb6a5280acec, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  inventory:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
 --- !u!114 &114532151861266716
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -177,6 +156,19 @@ MonoBehaviour:
   fireRate: 0.5
   speed: 10
   spawnDistance: 0.75
+--- !u!114 &114630541299517028
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1672199905514390}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35425b4e56b8944c29eecb6a5280acec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inventory: []
+  bomb_count: {fileID: 0}
 --- !u!114 &114639112969245842
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -215,6 +207,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 4294967295
   m_Materials:
   - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
   m_StaticBatchInfo:
