@@ -38,17 +38,17 @@ public class GameLevel1 : GameSystem, IGameSystem {
 	public IEnumerator Spawn() {
 		// choose which monster factory you want to spawn the monster
 		// the number of monster factories in "mfs" variable is equal to the number of starting coordinates
-		monsters.Add(mfs[0].getMonster(Monsters.bt));
+		monsters.Add(mfs[0].getMonster(Monsters.goomba));
 		yield return new WaitForSeconds(2);
-		monsters.Add(mfs[0].getMonster(Monsters.bt));
+		monsters.Add(mfs[0].getMonster(Monsters.goomba));
 		yield return new WaitForSeconds(2);
-		monsters.Add(mfs[0].getMonster(Monsters.bt));
+		monsters.Add(mfs[0].getMonster(Monsters.goomba));
 		yield return new WaitForSeconds(8);
-		monsters.Add(mfs[0].getMonster(Monsters.bt));
+		monsters.Add(mfs[0].getMonster(Monsters.goomba));
 		yield return new WaitForSeconds(2);
-		monsters.Add(mfs[0].getMonster(Monsters.bt));
+		monsters.Add(mfs[0].getMonster(Monsters.goomba));
 		yield return new WaitForSeconds(2);
-		monsters.Add(mfs[0].getMonster(Monsters.bt));
+		monsters.Add(mfs[0].getMonster(Monsters.goomba));
 
 		numberOfMonsters = monsters.Count;
 	}

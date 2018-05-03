@@ -11,5 +11,9 @@ public class FireBallProjectile : MonoBehaviour {
             bt.TakeDamage();
             bt.ObserveHP();
 		}
-	}
+        else if (coll.gameObject.CompareTag("rock"))
+        {
+            Destroy(this.transform.parent.gameObject);
+        }
+    }
 }

@@ -10,6 +10,7 @@ TagManager:
   - fireball
   - boss
   - MainCanvas
+  - rock
   layers:
   - Default
   - TransparentFX

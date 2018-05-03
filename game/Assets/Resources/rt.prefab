@@ -25,6 +25,7 @@ GameObject:
   - component: {fileID: 61375602068052802}
   - component: {fileID: 50021194550013230}
   - component: {fileID: 114820914782066346}
+  - component: {fileID: 114229471440722250}
   m_Layer: 0
   m_Name: rt
   m_TagString: enemy
@@ -107,10 +108,9 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!114 &114229471440722250
 MonoBehaviour:
-  m_ObjectHideFlags: 1
+  m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1830690941139394}
@@ -119,9 +119,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8161c6a5f719c4ca1b8be0c4963e8789, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waypoints: []
-  moveSpeed: 2
-  waypointIndex: 0
+  youLose: {fileID: 0}
 --- !u!114 &114820914782066346
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -161,7 +159,6 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
-  m_RenderingLayerMask: 4294967295
   m_Materials:
   - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
   m_StaticBatchInfo:

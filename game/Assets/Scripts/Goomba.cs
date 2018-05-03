@@ -25,6 +25,7 @@ public class Goomba : MonoBehaviour, IMonster
         DifficultyLevel diff = DifficultyLevel.GetDifficultyLevelInstance();
         difficultyType = diff == null ? DifficultyType.EasyMode : diff.getDifficulty();
         HandleDifficultyType();
+        iHealth.Health = iHealth.Health/2;
         GameObject go = GameObject.FindGameObjectWithTag("GameController");
         GameSystem gs = go.GetComponent<GameSystem>();
         gs.SetRoute(this.gameObject);

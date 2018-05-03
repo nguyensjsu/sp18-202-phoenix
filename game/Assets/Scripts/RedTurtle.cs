@@ -7,7 +7,7 @@ using UnityEngine;
 public class RedTurtle : MonoBehaviour, IMonster
 {
 
-    public static float DEFAULT_SPEED = 1;
+    public static float DEFAULT_SPEED = 2;
 
     public DifficultyType difficultyType;
     private IHealth iHealth;
@@ -27,6 +27,7 @@ public class RedTurtle : MonoBehaviour, IMonster
         DifficultyLevel diff = DifficultyLevel.GetDifficultyLevelInstance();
         difficultyType = diff == null ? DifficultyType.EasyMode : diff.getDifficulty();
         HandleDifficultyType();
+        iHealth.Health = iHealth.Health * 2;
         GameObject go = GameObject.FindGameObjectWithTag("GameController");
         GameSystem gs = go.GetComponent<GameSystem>();
         gs.SetRoute(this.gameObject);
