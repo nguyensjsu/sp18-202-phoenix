@@ -31,16 +31,13 @@ public class ItemGenerator : MonoBehaviour
 	}
 
 	private Items randomizeItem() {
-		return Items.pow;
 		float value = UnityEngine.Random.value;
 		if (value > 0.40f) {
 			return Items.bomb;
-		} else if (value > 0.30f && value < 0.40f) {
-			return Items.bullet;
-		} else if (value > 0.20f && value < 0.30f) {
+		} else if (value > 0.20f && value < 0.40f) {
 			return Items.fire;
 		} else if (value > 0.05f && value < 0.20f) {
-			
+            return Items.coin;
 		}
 		return Items.pow;
 	}
