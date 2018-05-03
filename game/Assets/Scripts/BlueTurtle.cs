@@ -22,7 +22,6 @@ public class BlueTurtle : MonoBehaviour, IMonster {
     
     public void AddObserver(MonoBehaviour observer)
     {
-        Debug.Log("In AddObserver");
         observers.Add(observer);
     }
     // Use this for initialization
@@ -119,7 +118,6 @@ public class BlueTurtle : MonoBehaviour, IMonster {
 
     public void NotifyAll()
     {
-        Debug.Log("In NotifyAll");
         foreach (MonoBehaviour observer in observers)
         {
             observer.SendMessage("UpdateState");
@@ -132,11 +130,8 @@ public class BlueTurtle : MonoBehaviour, IMonster {
         {
             GameObject.FindGameObjectWithTag("GameController").GetComponent<GameSystem>().SendMessage("DecreaseNumberOfMonsters");
         }
-
         catch
-        {
-
-        }
+        {}
         
     }
 }

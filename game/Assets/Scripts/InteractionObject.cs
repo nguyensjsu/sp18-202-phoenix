@@ -7,7 +7,6 @@ public class InteractionObject : MonoBehaviour {
     public bool inventoried;
     public string type;
     public int damage;
-    public GameObject bt;
     int bt_id = 0;
     int bt_clone_id = -1;
     public GameObject bt_clone;
@@ -18,9 +17,9 @@ public class InteractionObject : MonoBehaviour {
         try
         {
             bt_clone = GameObject.FindGameObjectWithTag("enemy");
+            bt_clone_id = bt_clone.GetInstanceID();
         }
         catch { }
-        bt_clone_id = bt_clone.GetInstanceID();
         if (bt_id != bt_clone_id)
         {
             bt_script = bt_clone.GetComponent<BlueTurtle>();
@@ -29,15 +28,15 @@ public class InteractionObject : MonoBehaviour {
         }
     }
 
-        public void DoAction()
+    public void DoAction()
     {
-        gameObject.SetActive(false);
+        gameObject.GetComponent<Renderer>().enabled = false;
     }
 
 	public void DoAnotherAction(Vector3 position)
     {
 		gameObject.transform.position = position;
-        gameObject.SetActive(true);
+        gameObject.GetComponent<Renderer>().enabled = true;
     }
 
     public void OnTriggerEnter2D(Collider2D collision)
@@ -46,10 +45,7 @@ public class InteractionObject : MonoBehaviour {
         {
             if (collision.CompareTag("enemy"))
             {
-                EnemyInteraction currentScript = collision.GetComponent<EnemyInteraction>();
-                currentScript.SendMessage("TakeDamage", damage, SendMessageOptions.DontRequireReceiver);
-                //Bomb currentBombScript = gameObject.GetComponent<Bomb>();
-                //currentBombScript.SendMessage("Boom",SendMessageOptions.DontRequireReceiver);
+                collision.GetComponent<BlueTurtle>().SendMessage("TakeDamage");
                 Destroy(gameObject);
             }
         }

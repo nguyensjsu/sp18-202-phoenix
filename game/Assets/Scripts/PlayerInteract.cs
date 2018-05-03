@@ -14,16 +14,16 @@ public class PlayerInteract : MonoBehaviour {
 
     private void Awake()
     {
-        
+        inventory = GameObject.FindGameObjectWithTag("Player").GetComponent<Inventory>();
     }
     public void Update()
     {
         try
         {
             bt_clone = GameObject.FindGameObjectWithTag("enemy");
+            bt_clone_id = bt_clone.GetInstanceID();
         }
         catch { }
-        bt_clone_id = bt_clone.GetInstanceID();
         if (bt_id != bt_clone_id)
         {
             bt_script = bt_clone.GetComponent<BlueTurtle>();
@@ -94,6 +94,7 @@ public class PlayerInteract : MonoBehaviour {
             if (other.gameObject == current)
             {
                 current = null;
+                currentScript = null;
             }
         }
     }

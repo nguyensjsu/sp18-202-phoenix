@@ -1,33 +1,38 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Inventory : MonoBehaviour {
-
-    public GameObject[] inventory = new GameObject[10];
+    
+    public List<GameObject> inventory = new List<GameObject>();
+    int count = 0;
+    GameObject canvasObj;
+    Transform textTr;
+    public Text bomb_count;
 
     public void Additem(GameObject item)
     {
-        bool itemAdded = false;
-        for (int i = 0; i < inventory.Length; i++)
-        {
-            if (inventory[i] == null)
-            {
-                inventory[i] = item;
-                itemAdded = true;
-                item.SendMessage("DoAction");
-                break;
-            }
-        }
-        if (!itemAdded)
-        {
-            Debug.Log("Item not added");
-        }
+        inventory.Add(item);
+        count += 1;
+        item.SendMessage("DoAction");
+    }
+
+    private void Awake()
+    {
+        canvasObj = GameObject.FindGameObjectWithTag("MainCanvas");
+        textTr = canvasObj.transform.Find("Bomb Count");
+        bomb_count = textTr.GetComponent<Text>();
+    }
+
+    public void Update()
+    {
+        bomb_count.text = "Bomb Count : " + count;
     }
 
     public GameObject FindItem(string type)
     {
-        for (int i = 0; i < inventory.Length; i++)
+        for (int i = 0; i < inventory.Capacity; i++)
         {
             if (inventory[i] != null)
             {
@@ -42,16 +47,7 @@ public class Inventory : MonoBehaviour {
 
     public void RemoveItem(GameObject item)
     {
-        for (int i = 0; i < inventory.Length; i++)
-        {
-            if (inventory[i] != null)
-            {
-                if (inventory[i] == item)
-                {
-                    inventory[i] = null;
-                    break;
-                }
-            }
-        }
+        count -= 1;
+        inventory.Remove(item);
     }
 }
