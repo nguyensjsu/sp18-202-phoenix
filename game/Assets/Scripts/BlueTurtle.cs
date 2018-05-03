@@ -26,10 +26,10 @@ public class BlueTurtle : MonoBehaviour, IMonster {
     }
     // Use this for initialization
     void Start () {
-        HandleDifficultyType();
         DifficultyLevel diff = DifficultyLevel.GetDifficultyLevelInstance();
-        difficultyType = diff.getDifficulty();
-		GameObject go = GameObject.FindGameObjectWithTag("GameController");
+        difficultyType = diff == null ? DifficultyType.HardMode : diff.getDifficulty();
+        HandleDifficultyType();
+        GameObject go = GameObject.FindGameObjectWithTag("GameController");
 		GameSystem gs = go.GetComponent<GameSystem>();
 		gs.SetRoute(this.gameObject);
     }
@@ -108,14 +108,16 @@ public class BlueTurtle : MonoBehaviour, IMonster {
 	}
 
 	public void ObserveHP() {
-		if (iHealth.Health == 0) {
-			Destroy (this.gameObject);
-		}
-	}
+        if (iHealth.Health <= 0)
+        {
+            Destroy(this.gameObject);
+        }
+    }
 
     public void TakeDamage()
     {
         iHealth.TakeDamage();
+        Debug.Log("Current Health : "+ iHealth.Health);
     }
 
     public void NotifyAll()

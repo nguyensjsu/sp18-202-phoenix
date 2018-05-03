@@ -13,7 +13,7 @@ public interface IHealth
 }
 public class EasyMode : MonoBehaviour, IHealth
 {
-    private int health = 5;
+    private int health = 6;
 
     public int Health
     {
