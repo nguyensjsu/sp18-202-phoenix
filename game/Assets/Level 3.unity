@@ -385,7 +385,7 @@ BoxCollider2D:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 426054124}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -9396,6 +9396,89 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &486409158
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 486409162}
+  - component: {fileID: 486409161}
+  - component: {fileID: 486409160}
+  - component: {fileID: 486409159}
+  m_Layer: 0
+  m_Name: EventSystem
+  m_TagString: GameController
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &486409159
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 486409158}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 015d0f95cc3a64c6eaa44ae2aa951ea2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  winner: {fileID: 140252360}
+  startingCoordinates: []
+  numberOfMonsters: 5
+  numberOfMonstersDestroyed: 0
+  isPaused: 0
+  isOver: 0
+  timer: {fileID: 231720547}
+  mfs: []
+  ig: {fileID: 0}
+--- !u!114 &486409160
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 486409158}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1077351063, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalAxis: Horizontal
+  m_VerticalAxis: Vertical
+  m_SubmitButton: Submit
+  m_CancelButton: Cancel
+  m_InputActionsPerSecond: 10
+  m_RepeatDelay: 0.5
+  m_ForceModuleActive: 0
+--- !u!114 &486409161
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 486409158}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -619905303, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 5
+--- !u!4 &486409162
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 486409158}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &690604839
 GameObject:
   m_ObjectHideFlags: 0
@@ -10365,7 +10448,7 @@ Transform:
   - {fileID: 690604840}
   - {fileID: 2007977395}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2007977394
 GameObject:
@@ -11311,6 +11394,7 @@ GameObject:
   - component: {fileID: 2101226174}
   - component: {fileID: 2101226173}
   - component: {fileID: 2101226172}
+  - component: {fileID: 2101226181}
   m_Layer: 0
   m_Name: Bowser Jr.
   m_TagString: Untagged
@@ -11329,7 +11413,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b6468f17a5f888340952b8cb3d6262f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelText: {fileID: 0}
+  levelText: {fileID: 965189203}
 --- !u!114 &2101226173
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11341,7 +11425,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f6d17a4ff80c3e4688edd6fa315f054, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timerText: {fileID: 0}
+  timerText: {fileID: 231720548}
 --- !u!50 &2101226174
 Rigidbody2D:
   serializedVersion: 4
@@ -11398,7 +11482,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1e356ed32e0dfc40a8ed914bcc6e002, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  loseText: {fileID: 0}
+  loseText: {fileID: 160396754}
+  step: 0.05
 --- !u!95 &2101226177
 Animator:
   serializedVersion: 3
@@ -11471,5 +11556,20 @@ Transform:
   m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2101226181
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2101226171}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a8f1723be7be4eb98b76c53a9ff5b5b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectile: {fileID: 0}
+  fireRate: 0
+  speed: 0
+  spawnDistance: 0

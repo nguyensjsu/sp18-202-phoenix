@@ -20,8 +20,8 @@ public class GameLevel3 : GameSystem, IGameSystem {
 
 	public override void Initialize(){
 		Init ();
-		startingCoordinates.Add (new Vector3 (-11.5f, 0.4f, 1));	// starting coordinate for enemies
-//		startingCoordinates.Add (new Vector3 (x, y, 1));			// you can add more starting coordinate based on the routes on your map
+		startingCoordinates.Add (new Vector3 (-11.5f, 3.4f, 1));	// starting coordinate for enemies
+		startingCoordinates.Add (new Vector3 (-11.5f, -3.4f, 1));			// you can add more starting coordinate based on the routes on your map
 //		startingCoordinates.Add (new Vector3 (x, y, 1));			// monster factory will be generated based on the number of starting coordinates
 		MovePattern.setInstance(LEVEL);
 		ig = new ItemGenerator (0.8f); // items spawn rate
@@ -39,18 +39,24 @@ public class GameLevel3 : GameSystem, IGameSystem {
 		// choose which monster factory you want to spawn the monster
 		// the number of monster factories in "mfs" variable is equal to the number of starting coordinates
 		monsters.Add(mfs[0].getMonster(Monsters.bt));
-		yield return new WaitForSeconds(2);
+        monsters.Add(mfs[1].getMonster(Monsters.bt));
+        yield return new WaitForSeconds(2);
 		monsters.Add(mfs[0].getMonster(Monsters.bt));
-		yield return new WaitForSeconds(2);
-		monsters.Add(mfs[0].getMonster(Monsters.bt));
-		yield return new WaitForSeconds(8);
-		monsters.Add(mfs[0].getMonster(Monsters.bt));
-		yield return new WaitForSeconds(2);
-		monsters.Add(mfs[0].getMonster(Monsters.bt));
-		yield return new WaitForSeconds(2);
-		monsters.Add(mfs[0].getMonster(Monsters.bt));
+        monsters.Add(mfs[1].getMonster(Monsters.bt));
+        yield return new WaitForSeconds(2);
+		monsters.Add(mfs[0].getMonster(Monsters.rt));
+        monsters.Add(mfs[1].getMonster(Monsters.rt));
+        yield return new WaitForSeconds(8);
+		monsters.Add(mfs[0].getMonster(Monsters.rt));
+        monsters.Add(mfs[1].getMonster(Monsters.rt));
+        yield return new WaitForSeconds(2);
+		monsters.Add(mfs[0].getMonster(Monsters.rt));
+        monsters.Add(mfs[1].getMonster(Monsters.rt));
+        yield return new WaitForSeconds(2);
+		monsters.Add(mfs[0].getMonster(Monsters.rt));
+        monsters.Add(mfs[1].getMonster(Monsters.rt));
 
-		numberOfMonsters = monsters.Count;
+        numberOfMonsters = monsters.Count;
 	}
 
 	public int Level {
