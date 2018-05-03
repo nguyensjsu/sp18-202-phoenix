@@ -27,7 +27,7 @@ public class BlueTurtle : MonoBehaviour, IMonster {
     // Use this for initialization
     void Start () {
         DifficultyLevel diff = DifficultyLevel.GetDifficultyLevelInstance();
-        difficultyType = diff == null ? DifficultyType.HardMode : diff.getDifficulty();
+        difficultyType = diff == null ? DifficultyType.EasyMode : diff.getDifficulty();
         HandleDifficultyType();
         GameObject go = GameObject.FindGameObjectWithTag("GameController");
 		GameSystem gs = go.GetComponent<GameSystem>();
