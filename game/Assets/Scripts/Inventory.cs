@@ -32,16 +32,20 @@ public class Inventory : MonoBehaviour {
 
     public GameObject FindItem(string type)
     {
-        for (int i = 0; i < inventory.Capacity; i++)
+        try
         {
-            if (inventory[i] != null)
+            for (int i = 0; i < inventory.Capacity; i++)
             {
-                if (inventory[i].GetComponent<InteractionObject>().type == type)
+                if (inventory[i] != null)
                 {
-                    return inventory[i];
+                    if (inventory[i].GetComponent<InteractionObject>().type == type)
+                    {
+                        return inventory[i];
+                    }
                 }
             }
         }
+        catch { }
         return null;
     }
 

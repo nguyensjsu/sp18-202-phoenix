@@ -7,13 +7,19 @@ using UnityEngine.UI;
 public class GameLevel2 : GameSystem, IGameSystem {
 
 	// change game level here
-	private static int LEVEL = 1;
+	private static int LEVEL = 2;
 
 	void Start () {
 		Run ();
 	}
-
-	void Update () {
+    public void Awake()
+    {
+        canvasObj = GameObject.FindGameObjectWithTag("MainCanvas");
+        textTr = canvasObj.transform.Find("Enemy Count");
+        enemy_count = textTr.GetComponent<Text>();
+    }
+    void Update () {
+        enemy_count.text = "Enemies Remaining : "+(monster_count-numberOfMonstersDestroyed);
 		ObservePauseButton ();
 		ObserveMonsters ();
 	}
@@ -39,18 +45,24 @@ public class GameLevel2 : GameSystem, IGameSystem {
 		// choose which monster factory you want to spawn the monster
 		// the number of monster factories in "mfs" variable is equal to the number of starting coordinates
 		monsters.Add(mfs[0].getMonster(Monsters.bt));
+        monster_count = monsters.Count;
 		yield return new WaitForSeconds(2);
+		monsters.Add(mfs[1].getMonster(Monsters.bt));
+        monster_count = monsters.Count;
+        yield return new WaitForSeconds(2);
 		monsters.Add(mfs[0].getMonster(Monsters.bt));
-		yield return new WaitForSeconds(2);
+        monster_count = monsters.Count;
+        yield return new WaitForSeconds(8);
+		monsters.Add(mfs[1].getMonster(Monsters.bt));
+        monster_count = monsters.Count;
+        yield return new WaitForSeconds(2);
 		monsters.Add(mfs[0].getMonster(Monsters.bt));
-		yield return new WaitForSeconds(8);
-		monsters.Add(mfs[0].getMonster(Monsters.bt));
-		yield return new WaitForSeconds(2);
-		monsters.Add(mfs[0].getMonster(Monsters.bt));
-		yield return new WaitForSeconds(2);
-		monsters.Add(mfs[0].getMonster(Monsters.bt));
+        monster_count = monsters.Count;
+        yield return new WaitForSeconds(2);
+		monsters.Add(mfs[1].getMonster(Monsters.bt));
+        monster_count = monsters.Count;
 
-		numberOfMonsters = monsters.Count;
+        numberOfMonsters = monsters.Count;
 	}
 
 	public int Level {

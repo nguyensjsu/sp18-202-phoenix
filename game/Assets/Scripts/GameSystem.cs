@@ -12,25 +12,27 @@ public abstract class GameSystem : MonoBehaviour {
 
 	public List<Vector3> startingCoordinates;
 	public ArrayList monsters;
-	public int numberOfMonsters;
+	public int numberOfMonsters, monster_count;
 	public int numberOfMonstersDestroyed;
 	public bool isPaused;
 	public bool isOver;
 	public Timer timer;
+    public GameObject canvasObj;
+    public Transform textTr;
+    public Text enemy_count;
 
-
-	public List<MonsterFactory> mfs;
+    public List<MonsterFactory> mfs;
 	public ItemGenerator ig;
 
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start () {
 
 	}
 
 	// Update is called once per frame
 	void Update () {
 
-	}
+    }
 
 	public void Run(){
 		Initialize();
@@ -42,6 +44,7 @@ public abstract class GameSystem : MonoBehaviour {
 		mfs = new List<MonsterFactory>();
 		monsters = new ArrayList();
 		numberOfMonsters = -1;
+        monster_count = -1;
 	}
 
 	public void ObservePauseButton() {
