@@ -21,7 +21,8 @@ public class Mario : Boss {
 			playerPosition = player.transform.position;
 			Move();
 		}
-	}
+        ObserveHP();
+    }
 
 	// TODO: Fix sporadic fast movement
 	public override void Move() {
