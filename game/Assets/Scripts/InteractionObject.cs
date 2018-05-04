@@ -66,7 +66,8 @@ public class InteractionObject : MonoBehaviour {
     {
         if (!collision.CompareTag("Player"))
         {
-            if (collision.CompareTag("enemy") || collision.CompareTag("enemy_rt") || collision.CompareTag("enemy_goomba"))
+            if (collision.CompareTag("enemy") || collision.CompareTag("enemy_rt") ||
+                collision.CompareTag("enemy_goomba") || collision.CompareTag("boss"))
             {
                 IMonster monster = collision.gameObject.GetComponent<IMonster>();
                 monster.TakeDamage();

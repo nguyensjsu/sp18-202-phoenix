@@ -35,9 +35,7 @@ public class Mario : Boss {
 	}
 
 	void OnTriggerEnter2D(Collider2D coll) {
-		if (coll.gameObject.CompareTag("fireball")) {
-			gameObject.SetActive(false);
-		} else if (coll.gameObject.CompareTag("Player")) {
+		if (coll.gameObject.CompareTag("Player")) {
 			BossWin();
 			GameObject luigi = GameObject.Find("Luigi(Clone)");
 			luigi.GetComponent<Luigi>().BossWin();
