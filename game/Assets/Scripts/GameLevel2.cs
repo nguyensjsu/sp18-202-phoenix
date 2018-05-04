@@ -23,6 +23,10 @@ public class GameLevel2 : GameSystem, IGameSystem {
         //enemy_count.text = "Enemies Remaining : "+(monster_count-numberOfMonstersDestroyed);
 		ObservePauseButton ();
 		ObserveMonsters ();
+        if (isOver)
+        {
+            StartCoroutine(LoadScene());
+        }
 	}
 
 	public override void Initialize(){

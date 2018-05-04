@@ -17,6 +17,10 @@ public class GameLevel3 : GameSystem, IGameSystem {
 	void Update () {
 		ObservePauseButton ();
 		ObserveMonsters ();
+        if (isOver)
+        {
+            StartCoroutine(LoadScene());
+        }
 	}
 
 	public override void Initialize(){

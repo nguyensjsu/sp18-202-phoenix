@@ -17,6 +17,10 @@ public class GameLevel5 : GameSystem, IGameSystem {
 	void Update () {
 		ObservePauseButton ();
 		ObserveMonsters ();
+        if (isOver)
+        {
+            winner.text = "Congratulations!";
+        }
 	}
 
 	public override void Initialize(){
