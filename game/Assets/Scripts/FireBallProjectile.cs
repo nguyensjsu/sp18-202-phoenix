@@ -5,7 +5,7 @@ using UnityEngine;
 public class FireBallProjectile : MonoBehaviour {
 
 	void OnTriggerEnter2D(Collider2D coll) {
-		if (coll.gameObject.CompareTag("enemy")) {
+		if (coll.gameObject.CompareTag("enemy") || coll.gameObject.CompareTag("enemy_rt") || coll.gameObject.CompareTag("enemy_goomba")) {
             Destroy(this.transform.parent.gameObject);
             IMonster bt = coll.gameObject.GetComponent<IMonster>();
             bt.TakeDamage();

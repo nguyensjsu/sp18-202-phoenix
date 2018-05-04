@@ -22,9 +22,9 @@ GameObject:
   - component: {fileID: 212738476213962654}
   - component: {fileID: 95946991244570608}
   - component: {fileID: 114772550980212594}
-  - component: {fileID: 114111208068269270}
   - component: {fileID: 61462237586209026}
   - component: {fileID: 50998074950701718}
+  - component: {fileID: 114707555361792390}
   m_Layer: 0
   m_Name: goomba
   m_TagString: enemy_goomba
@@ -39,8 +39,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1504784842050384}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 3.5, y: 3.5, z: 1}
+  m_LocalPosition: {x: -8.1, y: 3.53, z: 0}
+  m_LocalScale: {x: 4.3689265, y: 4.2414966, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -108,7 +108,7 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &114111208068269270
+--- !u!114 &114707555361792390
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -116,7 +116,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1504784842050384}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8161c6a5f719c4ca1b8be0c4963e8789, type: 3}
+  m_Script: {fileID: 11500000, guid: bba330fde691c1a4dae4976a1bc7c1e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   youLose: {fileID: 0}

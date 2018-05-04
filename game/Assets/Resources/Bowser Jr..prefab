@@ -127,7 +127,10 @@ MonoBehaviour:
   currentScript: {fileID: 0}
   inventory: {fileID: 114630541299517028}
   bt_clone: {fileID: 0}
-  bt_script: {fileID: 0}
+  goomba_clone: {fileID: 0}
+  rt_clone: {fileID: 0}
+  numberOfBombs: 0
+  numberOfFireBalls: 0
 --- !u!114 &114102141515176530
 MonoBehaviour:
   m_ObjectHideFlags: 1

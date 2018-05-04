@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class FinishBehaviour_rt : MonoBehaviour
+public class FinishBehaviour_goomba : MonoBehaviour
 {
 
     public Text youLose;
@@ -25,8 +25,8 @@ public class FinishBehaviour_rt : MonoBehaviour
         {
             if (collision.gameObject.CompareTag("Finish"))
             {
-                RedTurtle rt = gameObject.GetComponent<RedTurtle>();
-                rt.SendMessage("NotifyAll");
+                Goomba goomba = gameObject.GetComponent<Goomba>();
+                goomba.SendMessage("NotifyAll");
                 StartCoroutine(lose());
             }
         }

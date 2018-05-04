@@ -24,28 +24,40 @@ public class PlayerInteract : MonoBehaviour {
         try
         {
             bt_clone = GameObject.FindGameObjectWithTag("enemy");
-            goomba_clone = GameObject.FindGameObjectWithTag("enemy_goomba");
-            rt_clone = GameObject.FindGameObjectWithTag("enemy_rt");
             bt_clone_id = bt_clone.GetInstanceID();
-            goomba_id = goomba_clone.GetInstanceID();
-            rt_clone_id = rt_clone.GetInstanceID();
-        
-            if (bt_id != bt_clone_id && goomba_id != goomba_clone_id && rt_id != rt_clone_id)
+            if (bt_id != bt_clone_id)
             {
                 bt_script = bt_clone.GetComponent<IMonster>();
                 bt_script.AddObserver(this);
                 bt_id = bt_clone_id;
-
+            }
+        }
+        catch { }
+        try
+        {
+            goomba_clone = GameObject.FindGameObjectWithTag("enemy_goomba");
+            goomba_clone_id = goomba_clone.GetInstanceID();
+            if (goomba_id != goomba_clone_id)
+            {
                 goomba_script = goomba_clone.GetComponent<IMonster>();
                 goomba_script.AddObserver(this);
                 goomba_id = goomba_clone_id;
-
+            }
+        }
+        catch { }
+        try
+        {
+            rt_clone = GameObject.FindGameObjectWithTag("enemy_rt");
+            rt_clone_id = rt_clone.GetInstanceID();
+            if (rt_id != rt_clone_id)
+            {
                 rt_script = rt_clone.GetComponent<IMonster>();
                 rt_script.AddObserver(this);
                 rt_id = rt_clone_id;
             }
         }
-        catch { }
+        catch { }    
+        
 
         if (Input.GetButtonDown("interact") && current)
         {

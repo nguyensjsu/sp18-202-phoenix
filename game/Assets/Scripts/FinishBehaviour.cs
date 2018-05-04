@@ -21,12 +21,16 @@ public class FinishBehaviour : MonoBehaviour
 
     public void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Finish"))
+        try
         {
-            BlueTurtle bt = gameObject.GetComponent<BlueTurtle>();
-            bt.SendMessage("NotifyAll");
-			StartCoroutine(lose());
+            if (collision.gameObject.CompareTag("Finish"))
+            {
+                BlueTurtle bt = gameObject.GetComponent<BlueTurtle>();
+                bt.SendMessage("NotifyAll");
+                StartCoroutine(lose());
+            }
         }
+        catch { }
     }
 
 	private IEnumerator lose()
