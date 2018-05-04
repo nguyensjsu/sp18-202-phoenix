@@ -24,7 +24,6 @@ public class Mario : Boss {
         ObserveHP();
     }
 
-	// TODO: Fix sporadic fast movement
 	public override void Move() {
 		if (playerPosition.x < transform.position.x && transform.rotation.eulerAngles.y != 180f) {
 			transform.RotateAround(transform.position, transform.up, 180f);

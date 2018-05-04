@@ -11,23 +11,21 @@ public abstract class Boss : MonoBehaviour, IMonster {
 	protected int step = 0;
 	protected int route = 0;
 	protected bool win;
+    protected List<MonoBehaviour> observers = new List<MonoBehaviour>();
 
-    void Start()
-    {
+    void Start() {
         DifficultyLevel diff = DifficultyLevel.GetDifficultyLevelInstance();
         difficultyType = diff == null ? DifficultyType.EasyMode : diff.getDifficulty();
         HandleDifficultyType();
         iHealth.Health = iHealth.Health * 4;
     }
 
-    public void HandleDifficultyType()
-    {
+    public void HandleDifficultyType() {
 
         //To prevent Unity from creating multiple copies of the same component in inspector at runtime
         Component c = gameObject.GetComponent<IHealth>() as Component;
 
-        if (c != null)
-        {
+        if (c != null) {
             Destroy(c);
         }
 
@@ -50,9 +48,8 @@ public abstract class Boss : MonoBehaviour, IMonster {
         #endregion
     }
 
-    public void AddObserver(MonoBehaviour observer)
-    {
-        
+    public void AddObserver(MonoBehaviour observer) {
+        observers.Add(observer);
     }
 
     public float Speed { 
@@ -86,11 +83,16 @@ public abstract class Boss : MonoBehaviour, IMonster {
     }
 
     public void OnDestroy() {
-
+        try
+        {
+            GameObject.FindGameObjectWithTag("GameController").GetComponent<GameSystem>().SendMessage("DecreaseNumberOfMonsters");
+        }
+        catch
+        { }
     }
 
     public void NotifyAll()
     {
-
+        // bosses don't cross the finish line
     }
 }
