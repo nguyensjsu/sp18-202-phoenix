@@ -10,10 +10,19 @@ public class FireBallProjectile : MonoBehaviour {
             IMonster bt = coll.gameObject.GetComponent<IMonster>();
             bt.TakeDamage();
             bt.ObserveHP();
+            Hit(coll.transform.position);
 		}
         else if (coll.gameObject.CompareTag("rock"))
         {
             Destroy(this.transform.parent.gameObject);
+            Hit(coll.transform.position);
         }
+
     }
+
+    void Hit(Vector3 position) {
+        position.z = -1.0f;
+        Instantiate(Resources.Load("hit"), position, Quaternion.identity);
+    }
+
 }

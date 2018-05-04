@@ -25,7 +25,7 @@ public class PowActivator : MonoBehaviour {
 		for (int i = 0; i < 5; i++) {
 			float x = UnityEngine.Random.Range (-horzExtent, horzExtent);
 			float y = UnityEngine.Random.Range (-vertExtent, vertExtent);
-			Vector3 vector = new Vector3 (x, y, 0f);
+			Vector3 vector = new Vector3 (x, y, -1.0f);
 			Instantiate (Resources.Load ("Boom"), vector, Quaternion.identity);
 		}
 
