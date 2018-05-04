@@ -7,7 +7,7 @@ using UnityEngine;
 public class RedTurtle : MonoBehaviour, IMonster
 {
 
-    public static float DEFAULT_SPEED = 2;
+    public static float DEFAULT_SPEED = 1.2f;
 
     public DifficultyType difficultyType;
     private IHealth iHealth;
@@ -61,6 +61,7 @@ public class RedTurtle : MonoBehaviour, IMonster
 
             case DifficultyType.HardMode:
                 iHealth = gameObject.AddComponent<HardMode>();
+                DEFAULT_SPEED = 1.5f;
                 break;
 
             default:
