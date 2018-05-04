@@ -150,7 +150,7 @@
 * Phani Teja Kantamneni
 	* Implement enemy health decline/death as it comes into contact with the items placed in it's path
 	* Implement observer design pattern, when the enemy crosses the finish line
-	* Design and implement level 3.
+	* Design and implement level 2.
 
 ### 3. What tasks are blocked waiting on another team member?
 * Phani was having issues placing items in a location relative to the player's coordinates.
@@ -201,7 +201,7 @@
 
 * Phani Teja Kantamneni
 	* Modify the observer pattern to signify the end of the game when all the enemies are killed or when the player dies
-	* Implement level 3
+	* Implement level 2
 
 ### 3. What tasks are blocked waiting on another team member?
 * Waiting on observer pattern to be updated so we can move to next level once all enemies are destroyed
