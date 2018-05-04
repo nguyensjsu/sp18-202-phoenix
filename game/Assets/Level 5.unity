@@ -10051,7 +10051,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Bomb Text: X'
+  m_Text: 'Bomb Count: 0'
 --- !u!222 &850569593
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -10603,10 +10603,14 @@ MonoBehaviour:
   winner: {fileID: 140252360}
   startingCoordinates: []
   numberOfMonsters: 0
+  monster_count: 0
   numberOfMonstersDestroyed: 0
   isPaused: 0
   isOver: 0
   timer: {fileID: 231720547}
+  canvasObj: {fileID: 0}
+  textTr: {fileID: 0}
+  enemy_count: {fileID: 0}
   mfs: []
   ig: {fileID: 0}
 --- !u!114 &1187644827
