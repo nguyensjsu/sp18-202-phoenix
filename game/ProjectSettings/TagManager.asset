@@ -11,6 +11,8 @@ TagManager:
   - boss
   - MainCanvas
   - rock
+  - enemy_goomba
+  - enemy_rt
   layers:
   - Default
   - TransparentFX

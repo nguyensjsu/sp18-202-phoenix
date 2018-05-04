@@ -7,10 +7,10 @@ public class PlayerInteract : MonoBehaviour {
     public GameObject current = null;
     public InteractionObject currentScript = null;
     public Inventory inventory;
-    int bt_id = 0;
-    int bt_clone_id = -1;
-    public GameObject bt_clone;
-    public IMonster bt_script;
+    int bt_id = 0, rt_id = 0, goomba_id = 0;
+    int bt_clone_id = -1, rt_clone_id = -1, goomba_clone_id = -1;
+    public GameObject bt_clone, goomba_clone, rt_clone;
+    public IMonster bt_script, goomba_script, rt_script;
 
     public int numberOfBombs = 0;
     public int numberOfFireBalls = 0;
@@ -24,17 +24,28 @@ public class PlayerInteract : MonoBehaviour {
         try
         {
             bt_clone = GameObject.FindGameObjectWithTag("enemy");
+            goomba_clone = GameObject.FindGameObjectWithTag("enemy_goomba");
+            rt_clone = GameObject.FindGameObjectWithTag("enemy_rt");
             bt_clone_id = bt_clone.GetInstanceID();
+            goomba_id = goomba_clone.GetInstanceID();
+            rt_clone_id = rt_clone.GetInstanceID();
+        
+            if (bt_id != bt_clone_id && goomba_id != goomba_clone_id && rt_id != rt_clone_id)
+            {
+                bt_script = bt_clone.GetComponent<IMonster>();
+                bt_script.AddObserver(this);
+                bt_id = bt_clone_id;
+
+                goomba_script = goomba_clone.GetComponent<IMonster>();
+                goomba_script.AddObserver(this);
+                goomba_id = goomba_clone_id;
+
+                rt_script = rt_clone.GetComponent<IMonster>();
+                rt_script.AddObserver(this);
+                rt_id = rt_clone_id;
+            }
         }
         catch { }
-        if (bt_id != bt_clone_id)
-        {
-            //if(bt_clone is BlueTurtle)
-            bt_script = bt_clone.GetComponent<IMonster>();
-            bt_script.AddObserver(this);
-            bt_id = bt_clone_id;
-        }
-        
 
         if (Input.GetButtonDown("interact") && current)
         {

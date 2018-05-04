@@ -109,7 +109,7 @@ public class Hero : MonoBehaviour {
 			coll.gameObject.SetActive(false);
 			return;
 		} else if (coll.gameObject.CompareTag("enemy") ||
-				   coll.gameObject.CompareTag("boss")) {
+				   coll.gameObject.CompareTag("boss") || coll.gameObject.CompareTag("enemy_rt") || coll.gameObject.CompareTag("enemy_goomba")) {
 			alive = false;
 			//loseText.text = "You Lose";
 			StartCoroutine(lose());
