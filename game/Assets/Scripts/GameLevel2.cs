@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 
 public class GameLevel2 : GameSystem, IGameSystem {
@@ -14,12 +15,12 @@ public class GameLevel2 : GameSystem, IGameSystem {
 	}
     public void Awake()
     {
-        canvasObj = GameObject.FindGameObjectWithTag("MainCanvas");
-        textTr = canvasObj.transform.Find("Enemy Count");
-        enemy_count = textTr.GetComponent<Text>();
+        //canvasObj = GameObject.FindGameObjectWithTag("MainCanvas");
+        //textTr = canvasObj.transform.Find("Enemy Count");
+        //enemy_count = textTr.GetComponent<Text>();
     }
     void Update () {
-        enemy_count.text = "Enemies Remaining : "+(monster_count-numberOfMonstersDestroyed);
+        //enemy_count.text = "Enemies Remaining : "+(monster_count-numberOfMonstersDestroyed);
 		ObservePauseButton ();
 		ObserveMonsters ();
 	}
@@ -45,25 +46,31 @@ public class GameLevel2 : GameSystem, IGameSystem {
 		// choose which monster factory you want to spawn the monster
 		// the number of monster factories in "mfs" variable is equal to the number of starting coordinates
 		monsters.Add(mfs[0].getMonster(Monsters.bt));
-        monster_count = monsters.Count;
+        //monster_count = monsters.Count;
 		yield return new WaitForSeconds(2);
 		monsters.Add(mfs[1].getMonster(Monsters.bt));
-        monster_count = monsters.Count;
+        //monster_count = monsters.Count;
         yield return new WaitForSeconds(2);
 		monsters.Add(mfs[0].getMonster(Monsters.bt));
-        monster_count = monsters.Count;
+        //monster_count = monsters.Count;
         yield return new WaitForSeconds(8);
 		monsters.Add(mfs[1].getMonster(Monsters.bt));
-        monster_count = monsters.Count;
+        //monster_count = monsters.Count;
         yield return new WaitForSeconds(2);
 		monsters.Add(mfs[0].getMonster(Monsters.bt));
-        monster_count = monsters.Count;
+        //monster_count = monsters.Count;
         yield return new WaitForSeconds(2);
 		monsters.Add(mfs[1].getMonster(Monsters.bt));
-        monster_count = monsters.Count;
+        //monster_count = monsters.Count;
 
         numberOfMonsters = monsters.Count;
 	}
+
+    public IEnumerator LoadScene()
+    {
+        yield return new WaitForSeconds(3);
+        SceneManager.LoadScene(Level + 1);
+    }
 
 	public int Level {
 		get {

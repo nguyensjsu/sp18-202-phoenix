@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 
 public class GameLevel3 : GameSystem, IGameSystem {
@@ -61,6 +62,12 @@ public class GameLevel3 : GameSystem, IGameSystem {
 
         numberOfMonsters = monsters.Count;
 	}
+
+    public IEnumerator LoadScene()
+    {
+        yield return new WaitForSeconds(3);
+        SceneManager.LoadScene(Level + 1);
+    }
 
 	public int Level {
 		get {

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 
 public class GameLevel4 : GameSystem, IGameSystem {
@@ -16,6 +17,9 @@ public class GameLevel4 : GameSystem, IGameSystem {
 	void Update () {
 		ObservePauseButton ();
 		ObserveMonsters ();
+        if (isOver) {
+            StartCoroutine(LoadScene());
+        }
 	}
 
 	public override void Initialize(){
@@ -74,6 +78,11 @@ public class GameLevel4 : GameSystem, IGameSystem {
 
 		numberOfMonsters = monsters.Count;
 	}
+
+    public IEnumerator LoadScene() {
+        yield return new WaitForSeconds(3);
+        SceneManager.LoadScene(Level + 1);
+    }
 
 	public int Level {
 		get {

@@ -52,7 +52,6 @@ public abstract class GameSystem : MonoBehaviour {
 	public void ObserveMonsters() {
 		if (numberOfMonsters - numberOfMonstersDestroyed == 0 && !isPaused) {
 			isOver = true;
-			ToggleGamePause ();
 			winner.text = "You Won!";
 		}
 	}
