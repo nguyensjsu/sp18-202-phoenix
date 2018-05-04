@@ -40,7 +40,7 @@ public class BlueTurtle : MonoBehaviour, IMonster {
 		ObserveHP ();
 	}
 
-    private void HandleDifficultyType()
+    public void HandleDifficultyType()
     {
 
         //To prevent Unity from creating multiple copies of the same component in inspector at runtime
@@ -128,7 +128,7 @@ public class BlueTurtle : MonoBehaviour, IMonster {
         }
     }
 
-    private void OnDestroy()
+    public void OnDestroy()
     {
         try
         {
