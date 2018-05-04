@@ -45,7 +45,7 @@ public class PlayerInteract : MonoBehaviour {
             }
             else if (item.Contains("fire"))
             {
-                numberOfFireBalls += 3;
+                numberOfFireBalls += 5;
             }
             Destroy(current.gameObject);
         }

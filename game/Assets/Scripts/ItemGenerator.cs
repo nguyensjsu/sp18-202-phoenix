@@ -32,9 +32,9 @@ public class ItemGenerator : MonoBehaviour
 
 	private Items randomizeItem() {
 		float value = UnityEngine.Random.value;
-		if (value > 0.40f) {
+		if (value > 0.60f) {
 			return Items.bomb;
-		} else if (value > 0.20f && value < 0.40f) {
+		} else if (value > 0.20f && value < 0.60f) {
 			return Items.fire;
 		} else if (value > 0.05f && value < 0.20f) {
             return Items.coin;
