@@ -15,7 +15,12 @@ public abstract class Boss : MonoBehaviour, IMonster {
 
     void Start() {
         DifficultyLevel diff = DifficultyLevel.GetDifficultyLevelInstance();
-        difficultyType = diff == null ? DifficultyType.EasyMode : diff.getDifficulty();
+
+        if (diff.getDifficulty() == DifficultyType.EasyMode)
+            difficultyType = DifficultyType.EasyMode;
+        else
+            difficultyType = DifficultyType.HardMode;
+
         HandleDifficultyType();
         iHealth.Health = iHealth.Health * 4;
     }

@@ -31,7 +31,10 @@ public class DifficultyLevel : MonoBehaviour
 
     public static DifficultyLevel GetDifficultyLevelInstance()
     {
-        return difficultyLevelInstance;
+        if (difficultyLevelInstance == null)
+            return NewDifficultyLevelInstance(); 
+        else
+            return difficultyLevelInstance;
     }
 
 }
