@@ -10,6 +10,9 @@ public interface IMonster {
 
 	void Move();
     void AddObserver(MonoBehaviour observer);
+    void NotifyAll();
     void ObserveHP();
     void TakeDamage();
+    void OnDestroy();
+    void HandleDifficultyType();
 }

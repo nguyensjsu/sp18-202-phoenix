@@ -20,7 +20,7 @@ public abstract class Boss : MonoBehaviour, IMonster {
         iHealth.Health = iHealth.Health * 4;
     }
 
-    private void HandleDifficultyType()
+    public void HandleDifficultyType()
     {
 
         //To prevent Unity from creating multiple copies of the same component in inspector at runtime
@@ -83,5 +83,14 @@ public abstract class Boss : MonoBehaviour, IMonster {
 
     public void TakeDamage() {
         iHealth.TakeDamage();
+    }
+
+    public void OnDestroy() {
+
+    }
+
+    public void NotifyAll()
+    {
+
     }
 }
