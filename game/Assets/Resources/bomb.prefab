@@ -24,7 +24,6 @@ GameObject:
   - component: {fileID: 114033811315384044}
   - component: {fileID: 50805935704180962}
   - component: {fileID: 58611406393962714}
-  - component: {fileID: 114366412675689514}
   m_Layer: 0
   m_Name: bomb
   m_TagString: iterObj
@@ -108,22 +107,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 976e1dcb2ff064ed7b8d8eddecd4a71d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &114366412675689514
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1889662066972930}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 422d905826e2b466199aca9df7892f17, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  inventoried: 0
-  type: Bomb
-  damage: 0
-  bt_clone: {fileID: 0}
-  bt_script: {fileID: 0}
 --- !u!212 &212120418178378520
 SpriteRenderer:
   m_ObjectHideFlags: 1

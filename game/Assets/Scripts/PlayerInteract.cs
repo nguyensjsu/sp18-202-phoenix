@@ -10,7 +10,7 @@ public class PlayerInteract : MonoBehaviour {
     int bt_id = 0;
     int bt_clone_id = -1;
     public GameObject bt_clone;
-    public MonoBehaviour bt_script;
+    public IMonster bt_script;
 
     public int numberOfBombs = 0;
     public int numberOfFireBalls = 0;
@@ -30,8 +30,8 @@ public class PlayerInteract : MonoBehaviour {
         if (bt_id != bt_clone_id)
         {
             //if(bt_clone is BlueTurtle)
-                bt_script = bt_clone.GetComponent<BlueTurtle>();
-            bt_script.SendMessage("AddObserver", this);
+            bt_script = bt_clone.GetComponent<IMonster>();
+            bt_script.AddObserver(this);
             bt_id = bt_clone_id;
         }
         

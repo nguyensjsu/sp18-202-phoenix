@@ -10,7 +10,7 @@ public class InteractionObject : MonoBehaviour {
     int bt_id = 0;
     int bt_clone_id = -1;
     public GameObject bt_clone;
-    public BlueTurtle bt_script;
+    public IMonster bt_script;
 
     public void Update()
     {
@@ -22,8 +22,8 @@ public class InteractionObject : MonoBehaviour {
         catch { }
         if (bt_id != bt_clone_id)
         {
-            bt_script = bt_clone.GetComponent<BlueTurtle>();
-            bt_script.SendMessage("AddObserver", this);
+            bt_script = bt_clone.GetComponent<IMonster>();
+            bt_script.AddObserver(this);
             bt_id = bt_clone_id;
         }
     }
@@ -47,6 +47,8 @@ public class InteractionObject : MonoBehaviour {
             {
                 IMonster monster = collision.gameObject.GetComponent<IMonster>();
                 monster.TakeDamage();
+                monster.TakeDamage();
+                monster.ObserveHP();
             }
         }
     }

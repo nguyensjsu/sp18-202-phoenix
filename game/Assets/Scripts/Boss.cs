@@ -50,6 +50,11 @@ public abstract class Boss : MonoBehaviour, IMonster {
         #endregion
     }
 
+    public void AddObserver(MonoBehaviour observer)
+    {
+        
+    }
+
     public float Speed { 
 		get { return speed; }
 		set { this.speed = value; }
