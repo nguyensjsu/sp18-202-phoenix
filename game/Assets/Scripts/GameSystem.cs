@@ -12,14 +12,11 @@ public abstract class GameSystem : MonoBehaviour {
 
 	public List<Vector3> startingCoordinates;
 	public ArrayList monsters;
-	public int numberOfMonsters, monster_count;
+	public int numberOfMonsters;
 	public int numberOfMonstersDestroyed;
 	public bool isPaused;
 	public bool isOver;
 	public Timer timer;
-    public GameObject canvasObj;
-    public Transform textTr;
-    public Text enemy_count;
 
     public List<MonsterFactory> mfs;
 	public ItemGenerator ig;
@@ -44,7 +41,6 @@ public abstract class GameSystem : MonoBehaviour {
 		mfs = new List<MonsterFactory>();
 		monsters = new ArrayList();
 		numberOfMonsters = -1;
-        monster_count = -1;
 	}
 
 	public void ObservePauseButton() {
