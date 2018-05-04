@@ -6,13 +6,13 @@ public class MenuReceiver : Receiver {
 
 	private GameObject menuPanel;
 	private GameObject difficultyPanel;
-	private GameObject aboutPanel;
+	private GameObject controlsPanel;
     public DifficultyLevel difficultyLevel = DifficultyLevel.NewDifficultyLevelInstance();
 
 	public void setPanels(GameObject m, GameObject d, GameObject a) {
 		menuPanel = m;
 		difficultyPanel = d;
-		aboutPanel = a;
+		controlsPanel = a;
 	}
 
 	public void doAction(string operation) {
@@ -24,9 +24,9 @@ public class MenuReceiver : Receiver {
 			menuPanel.SetActive(false);
 			difficultyPanel.SetActive(true);
 			break;
-		case "Display About":
+		case "Display Controls":
 			menuPanel.SetActive(false);
-			aboutPanel.SetActive(true);
+			controlsPanel.SetActive(true);
 			break;
 		case "Quit":
 			#if UNITY_EDITOR
@@ -46,7 +46,7 @@ public class MenuReceiver : Receiver {
 			if (difficultyPanel.activeSelf) {
 				difficultyPanel.SetActive(false);
 			} else {
-				aboutPanel.SetActive(false);
+				controlsPanel.SetActive(false);
 			}
 
 			menuPanel.SetActive(true);

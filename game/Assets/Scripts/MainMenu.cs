@@ -5,22 +5,22 @@ public class MainMenu : MonoBehaviour {
 
 	public GameObject menuPanel;
 	public GameObject difficultyPanel;
-	public GameObject aboutPanel;
+	public GameObject controlsPanel;
 
 	public Button startButton;
 	public Button difficultyButton;
-	public Button aboutButton;
+	public Button controlsButton;
 	public Button quitButton;
 	public Button easyButton;
 	public Button hardButton;
 	public Image easyButtonImage;
 	public Image hardButtonImage;
 	public Button difficultyBackButton;
-	public Button aboutBackButton;
+	public Button controlsBackButton;
 
 	private ICommand loadLevel1;
 	private ICommand displayDifficultyPanel;
-	private ICommand displayAboutPanel;
+	private ICommand displayControlsPanel;
 	private ICommand quitGame;
 	private ICommand selectEasyDifficulty;
 	private ICommand selectHardDifficulty;
@@ -30,12 +30,12 @@ public class MainMenu : MonoBehaviour {
 
 	void Start () {
 		MenuReceiver receiver = new MenuReceiver();
-		receiver.setPanels(menuPanel, difficultyPanel, aboutPanel);
+		receiver.setPanels(menuPanel, difficultyPanel, controlsPanel);
 		hardButtonImage.enabled = false;
 
 		loadLevel1 = new LoadLevelCommand();
 		displayDifficultyPanel = new DisplayDifficultyPanelCommand();
-		displayAboutPanel = new DisplayAboutPanelCommand();
+		displayControlsPanel = new DisplayControlsPanelCommand();
 		quitGame = new QuitGameCommand();
 
 		selectEasyDifficulty = new SelectEasyDifficultyCommand();
@@ -44,7 +44,7 @@ public class MainMenu : MonoBehaviour {
 
 		loadLevel1.setReceiver(receiver);
 		displayDifficultyPanel.setReceiver(receiver);
-		displayAboutPanel.setReceiver(receiver);
+		displayControlsPanel.setReceiver(receiver);
 		quitGame.setReceiver(receiver);
 		selectEasyDifficulty.setReceiver(receiver);
 		selectHardDifficulty.setReceiver(receiver);
@@ -52,12 +52,12 @@ public class MainMenu : MonoBehaviour {
 
 		startButton.onClick.AddListener(handleStartButtonClick);
 		difficultyButton.onClick.AddListener(handleDifficultyButtonClick);
-		aboutButton.onClick.AddListener(handleAboutButtonClick);
+		controlsButton.onClick.AddListener(handleControlsButtonClick);
 		quitButton.onClick.AddListener(handleQuitButtonClick);
 		easyButton.onClick.AddListener(handleEasyButtonClick);
 		hardButton.onClick.AddListener(handleHardButtonClick);
 		difficultyBackButton.onClick.AddListener(handleBackButtonClick);
-		aboutBackButton.onClick.AddListener(handleBackButtonClick);
+		controlsBackButton.onClick.AddListener(handleBackButtonClick);
 	}
 
 	private void handleStartButtonClick() {
@@ -68,8 +68,8 @@ public class MainMenu : MonoBehaviour {
 		displayDifficultyPanel.execute();
 	}
 
-	private void handleAboutButtonClick() {
-		displayAboutPanel.execute();
+	private void handleControlsButtonClick() {
+		displayControlsPanel.execute();
 	}
 
 	private void handleQuitButtonClick() {
