@@ -10540,7 +10540,6 @@ GameObject:
   - component: {fileID: 1013099617}
   - component: {fileID: 1013099616}
   - component: {fileID: 1013099620}
-  - component: {fileID: 1013099615}
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: GameController
@@ -10548,17 +10547,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1013099615
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1013099614}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 806a9d82b8303dc41bc59e86cdf95085, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1013099616
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10573,14 +10561,10 @@ MonoBehaviour:
   winner: {fileID: 140252360}
   startingCoordinates: []
   numberOfMonsters: 0
-  monster_count: 0
   numberOfMonstersDestroyed: 0
   isPaused: 0
   isOver: 0
   timer: {fileID: 231720547}
-  canvasObj: {fileID: 0}
-  textTr: {fileID: 0}
-  enemy_count: {fileID: 0}
   mfs: []
   ig: {fileID: 0}
 --- !u!114 &1013099617
