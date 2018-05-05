@@ -12,3 +12,6 @@ We discussed about the modules we divided the previous week, and using which des
 
 ### Week-4
 We each implemented the design patterns we were assigned. As the project was reaching the final phase, we started to integrate the pieces all of implemented individually. We ran into a few script reference errors every time someone made a push, but sorted them out in the end. 
+
+### Week-5
+We were finally able to integrate everything successfully, squash all the bugs and get a really good gameplay in the end. We learnt that incorporating the value of simplicity was really important to group projects as it made integration of all our code very easy in the end.
