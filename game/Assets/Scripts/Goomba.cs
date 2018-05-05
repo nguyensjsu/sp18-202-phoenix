@@ -147,7 +147,9 @@ public class Goomba : MonoBehaviour, IMonster
     {
         foreach (MonoBehaviour observer in observers)
         {
-            observer.SendMessage("UpdateState");
+            if (observer != null) {
+                observer.SendMessage("UpdateState");
+            }
         }
     }
 

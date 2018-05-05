@@ -9,6 +9,7 @@ public class GameLevel5 : GameSystem, IGameSystem {
 
 	// change game level here
 	private static int LEVEL = 5;
+    private static int MAIN_MENU = 0;
 
 	void Start () {
 		Run ();
@@ -20,6 +21,7 @@ public class GameLevel5 : GameSystem, IGameSystem {
         if (isOver)
         {
             winner.text = "Congratulations!";
+            StartCoroutine(LoadScene());
         }
 	}
 
@@ -43,40 +45,29 @@ public class GameLevel5 : GameSystem, IGameSystem {
 	public IEnumerator Spawn() {
 		monsters.Add(mfs[0].getMonster(Monsters.bt));
 		yield return new WaitForSeconds(2);
-		monsters.Add(mfs[1].getMonster(Monsters.bt));
-		yield return new WaitForSeconds(2);
 		monsters.Add(mfs[2].getMonster(Monsters.bt));
-		yield return new WaitForSeconds(5);
-		// red turtles
-		monsters.Add(mfs[0].getMonster(Monsters.rt));
-		yield return new WaitForSeconds(2);
+		yield return new WaitForSeconds(10);
+        monsters.Add(mfs[1].getMonster(Monsters.goomba));
+        yield return new WaitForSeconds(2);
+        monsters.Add(mfs[2].getMonster(Monsters.goomba));
+        yield return new WaitForSeconds(5);
 		monsters.Add(mfs[1].getMonster(Monsters.rt));
-		yield return new WaitForSeconds(2);
-		monsters.Add(mfs[2].getMonster(Monsters.rt));
-		yield return new WaitForSeconds(2);
-		// add goombas
-		monsters.Add(mfs[0].getMonster(Monsters.goomba));
-		yield return new WaitForSeconds(2);
-		monsters.Add(mfs[1].getMonster(Monsters.goomba));
-		yield return new WaitForSeconds(2);
-		monsters.Add(mfs[2].getMonster(Monsters.goomba));
-		yield return new WaitForSeconds(5);
+		yield return new WaitForSeconds(10);
 		// bosses
 		monsters.Add(mfs[1].getMonster(Monsters.Mario));
-		yield return new WaitForSeconds(2);
-		monsters.Add(mfs[0].getMonster(Monsters.Luigi));
 		yield return new WaitForSeconds(5);
+		monsters.Add(mfs[0].getMonster(Monsters.Luigi));
+		yield return new WaitForSeconds(8);
 		monsters.Add(mfs[2].getMonster(Monsters.bt));
-		monsters.Add(mfs[1].getMonster(Monsters.rt));
 		monsters.Add(mfs[1].getMonster(Monsters.goomba));
-
+        yield return new WaitForSeconds(1);
 		numberOfMonsters = monsters.Count;
 	}
 
     public IEnumerator LoadScene()
     {
         yield return new WaitForSeconds(3);
-        SceneManager.LoadScene(Level + 1);
+        SceneManager.LoadScene(MAIN_MENU);
     }
 
 	public int Level {
