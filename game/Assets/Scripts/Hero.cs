@@ -25,10 +25,10 @@ public class Hero : MonoBehaviour {
 		direction = "down";
 		alive = true;
 	}
+
 	// Use this for initialization
 	void Start () {
 		animator = GetComponent<Animator> ();
-//        loseText.text = "";
 		vertExtent = (Camera.main.orthographicSize) - offsetY;    
 		horzExtent = (Camera.main.orthographicSize * Screen.width / Screen.height) - offsetX;
 	}
@@ -111,7 +111,7 @@ public class Hero : MonoBehaviour {
 		} else if (coll.gameObject.CompareTag("enemy") ||
 				   coll.gameObject.CompareTag("boss") || coll.gameObject.CompareTag("enemy_rt") || coll.gameObject.CompareTag("enemy_goomba")) {
 			alive = false;
-			//loseText.text = "You Lose";
+			loseText.text = "You Lose";
 			StartCoroutine(lose());
 		}
 	}
@@ -122,14 +122,16 @@ public class Hero : MonoBehaviour {
 
 	private IEnumerator lose()
 	{
-		//loseText.text = "You Lose";
 		if (direction.Equals("left"))
 			animator.Play("die_left");
 		else
 			animator.Play("die_right");
-		Time.timeScale = 0;
-		yield return new WaitForSeconds(WAIT_TIME);
+
+        // setting time scale so small that it appears that it is paused
+        Time.timeScale = .0000001f;
+        yield return new WaitForSeconds(WAIT_TIME * .0000001f);
 		SceneManager.LoadScene(0);
-	}
+        Time.timeScale = 1;
+    }
 
 }
