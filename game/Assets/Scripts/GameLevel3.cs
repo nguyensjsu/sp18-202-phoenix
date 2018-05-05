@@ -47,22 +47,14 @@ public class GameLevel3 : GameSystem, IGameSystem {
         monsters.Add(mfs[1].getMonster(Monsters.goomba));
         yield return new WaitForSeconds(2);
 		monsters.Add(mfs[0].getMonster(Monsters.bt));
-        monsters.Add(mfs[1].getMonster(Monsters.bt));
         yield return new WaitForSeconds(2);
 		monsters.Add(mfs[0].getMonster(Monsters.rt));
         yield return new WaitForSeconds(3);
-        monsters.Add(mfs[1].getMonster(Monsters.rt));
-        yield return new WaitForSeconds(5);
 		monsters.Add(mfs[0].getMonster(Monsters.goomba));
         yield return new WaitForSeconds(2);
         monsters.Add(mfs[1].getMonster(Monsters.goomba));
         yield return new WaitForSeconds(2);
 		monsters.Add(mfs[0].getMonster(Monsters.bt));
-        monsters.Add(mfs[1].getMonster(Monsters.bt));
-        yield return new WaitForSeconds(2);
-		monsters.Add(mfs[0].getMonster(Monsters.rt));
-        yield return new WaitForSeconds(2);
-        monsters.Add(mfs[1].getMonster(Monsters.rt));
 
         numberOfMonsters = monsters.Count;
 	}
