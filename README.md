@@ -1,4 +1,4 @@
-# team202-phoenix
+# Super Bowser Jr. World
 
 Team hackathon repository for Spring 2018 CMPE 202 course in SJSU with professor Paul Nguyen. 
 
