@@ -13,3 +13,6 @@ Ideas for automated tests were discussed. We will look into how to add tests to 
 
 ### Week 4
  We held a longer meeting where we coded side by side (hackathon style) and discussed final features required to have a fully functioning game. Lots of features were added to our game this week. We demoed all features and discussed improvements. We also fixed an annoying object/script reference issue we were all facing with Unity. Some meta files were not being pushed into our Git repo. Thankfully, we no longer have to spend time fixing these references everytime we pull from Github.
+
+### Week 5
+Last week, we made it! Focus on this week was to finish up and remaining features, fix any bugs, and to play the game to ensure that it runs well. We are all happy with the final product!
