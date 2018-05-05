@@ -28,3 +28,9 @@
 * Since we are on the final stage of our project many tasks are linked/dependent on other tasks which makes proper communication very important.
 * Team members are also discussing and planning which design pattern each of us will implement and will use the best design pattern to present it during our class presentation.
 * Maintaining good communicaiton lines will be essential for smooth and efficient work. I will have to play more effective role and keep track that the team members are effectively speaking to each other.
+
+### Week 5
+* Since we are close to the deadline for the team hackathon project. we decided to meet everyday for few hours to increase communication and co-ordinate our efforts well to complete the task within alloted time.
+* I was able to co-ordinate and manage the task with other members as each one of us was finding it difficult to meet at a perticular time due to other projects from other courses.
+* we were finally able to complete the game and all the bugs and minor issues were discussed with the group so we can fix and help each other out.
+* I was also responsible to go through the whole submission list from the assignment page on canvas to make sure each of us were working on point and fulfilling all the requirements set forth by the professor.
